@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/isaacy13.github.io/static/css/main.1169ab56.chunk.css",
+    "main.js": "/isaacy13.github.io/static/js/main.911c8936.chunk.js",
+    "main.js.map": "/isaacy13.github.io/static/js/main.911c8936.chunk.js.map",
+    "runtime-main.js": "/isaacy13.github.io/static/js/runtime-main.1fbb8b1f.js",
+    "runtime-main.js.map": "/isaacy13.github.io/static/js/runtime-main.1fbb8b1f.js.map",
+    "static/js/2.55205cba.chunk.js": "/isaacy13.github.io/static/js/2.55205cba.chunk.js",
+    "static/js/2.55205cba.chunk.js.map": "/isaacy13.github.io/static/js/2.55205cba.chunk.js.map",
+    "static/js/3.890e8fde.chunk.js": "/isaacy13.github.io/static/js/3.890e8fde.chunk.js",
+    "static/js/3.890e8fde.chunk.js.map": "/isaacy13.github.io/static/js/3.890e8fde.chunk.js.map",
+    "index.html": "/isaacy13.github.io/index.html",
+    "static/css/main.1169ab56.chunk.css.map": "/isaacy13.github.io/static/css/main.1169ab56.chunk.css.map",
+    "static/js/2.55205cba.chunk.js.LICENSE.txt": "/isaacy13.github.io/static/js/2.55205cba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fbb8b1f.js",
+    "static/js/2.55205cba.chunk.js",
+    "static/css/main.1169ab56.chunk.css",
+    "static/js/main.911c8936.chunk.js"
+  ]
+}

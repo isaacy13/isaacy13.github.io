@@ -1,0 +1,22 @@
+/* Maybe add fade-out after done presenting - TODO */
+
+span {
+    /* Styling stuff */
+    color: white;
+    display:inline-block; /* inline-block so text can ignore margins for animation */
+    padding:1px; /* added for a bit of space b/w letters */
+    letter-spacing: normal;
+    font-family: sans-serif;
+    font-size: 60px;
+
+    /* Animation stuff */
+    transition: all .6s ease;
+    transform: translateY(25px);
+    opacity: 0;
+}
+
+/* individually moves/translates each "character" (aka span that we converted) */
+span.textFlyInAnimationByLetter {
+    opacity: 1;
+    transform: translateY(0px);
+}
