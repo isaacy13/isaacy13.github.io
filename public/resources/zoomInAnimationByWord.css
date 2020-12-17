@@ -1,0 +1,18 @@
+.zoomInAnimationByWord {
+    opacity: 0;
+    animation: zoomInAnimationByWord;
+    animation-duration: 1s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    font-size: 80px;
+
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoomInAnimationByWord {
+    0% { opacity: 0; transform: translateY(0vh); }
+
+    50% { opacity: 1; transform: translateY(5vh); }
+
+    100% { opacity: 0; transform: translateY(10vh); }
+}

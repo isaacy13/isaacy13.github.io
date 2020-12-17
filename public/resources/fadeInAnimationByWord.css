@@ -1,0 +1,19 @@
+/* Maybe add fade-out after done presenting - TODO */
+
+.fadeInAnimationByWord {
+    /* Styling stuff */
+    opacity: 0;
+    font-family: sans-serif;
+    font-size: 90px;
+
+    /* Animation stuff */
+    animation: fadeInAnimationByWord;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimationByWord {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
