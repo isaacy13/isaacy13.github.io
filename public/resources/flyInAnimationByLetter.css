@@ -1,16 +1,14 @@
-/* Maybe add fade-out after done presenting - TODO */
-
 span {
     /* Styling stuff */
     color: white;
     display:inline-block; /* inline-block so text can ignore margins for animation */
     padding:1px; /* added for a bit of space b/w letters */
-    letter-spacing: normal;
     font-family: sans-serif;
-    font-size: 60px;
+    font-size: 5vw;
 
     /* Animation stuff */
-    transition: all .6s ease;
+    animation-play-state: paused;
+    transition: all 1s ease;
     transform: translateY(25px);
     opacity: 0;
 }

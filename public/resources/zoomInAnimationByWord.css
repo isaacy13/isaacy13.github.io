@@ -1,18 +1,55 @@
-.zoomInAnimationByWord {
-    opacity: 0;
-    animation: zoomInAnimationByWord;
-    animation-duration: 1s;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
-    font-size: 80px;
+/* TODO */
+/* FIX TIMING!! -- figure out RIGHT WAY to do it */
+/* maybe do different background colors b/c it's kinda plain */
+/* when the "presenting things" are translated/animated, keep them there as tabs */
+/* after the tabs finish setting, fade the background from black to a starry sky */
 
+.zoomInAnimationByWord, .zoomInAnimationByWordL, .zoomInAnimationByWordM, .zoomInAnimationByWordR {
+    opacity: 0;
+    font-size: 5vw;
+}
+
+.zoomInAnimationByWordL {
+    animation: zoomInAnimationByWordL;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
 
-@keyframes zoomInAnimationByWord {
+.zoomInAnimationByWordM {
+    animation: zoomInAnimationByWordM;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.zoomInAnimationByWordR {
+    animation: zoomInAnimationByWordR;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoomInAnimationByWordL {
     0% { opacity: 0; transform: translateY(0vh); }
 
-    50% { opacity: 1; transform: translateY(5vh); }
+    50% { opacity: 1; transform: translateY(1.5vh); }
 
-    100% { opacity: 0; transform: translateY(10vh); }
+    100% { opacity: 0; transform: translateX(-1.5vh); }
+}
+
+@keyframes zoomInAnimationByWordM {
+    0% { opacity: 0; transform: translateY(0vh);}
+
+    50% { opacity: 1; transform: translateY(1.5vh); }
+
+    100% { opacity: 0; transform: translateY(3vh); }
+}
+
+@keyframes zoomInAnimationByWordR {
+    0% { opacity: 0; transform: translateY(0vh);}
+
+    50% { opacity: 1; transform: translateY(1.5vh) }
+
+    100% { opacity: 0; transform: translateX(1.5vh); }
 }

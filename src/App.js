@@ -1,20 +1,16 @@
 import './App.css';
-
 function App() {
   return (
-    <div>
-      <body>
-        <div>
-          <h1 className="flyInAnimationByLetter">ISAAC YEANG</h1>
-          {/* <h1 className="flyInAnimationByLetter">YEANG</h1> */}
-        </div>
-        <div>
-          <h1 className="fadeInAnimationByWord">PRESENTS</h1>
-        </div>
-        <div>
-          <h2 className="zoomInAnimationByWord">IDEAS</h2>
-        </div>
-      </body>
+    <div className="centerDiv" id="prezi">
+      <div>
+        <h1 className="flyInAnimationByLetter" id="name">ISAAC YEANG</h1>
+      </div>
+      <div>
+        <h1 className="fadeInAnimationByWord" id="presenting">PRESENTING</h1>
+      </div>
+      <div>
+        <h2 className="zoomInAnimationByWord" id="placeholder">PLACEHOLDER</h2>
+      </div>
     </div>
   );
 }
