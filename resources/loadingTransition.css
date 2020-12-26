@@ -9,17 +9,11 @@
     to { opacity: 0; }
 }
 
-.title h1{
+.title {
     animation: fadeInSky;
-    animation-duration: 4s;
-    font-size: 36px;
-    font-family: sans-serif;
-    margin-top:10em;
-    margin-left: auto;
-    margin-right:auto;
-    text-align: center;
+    animation-duration: 2s;
 
-    /* Stryling the text and giving it gradiant */
+    /* Styling the text and giving it gradiant */
     color:#ffffff;
 
     /* Make sure text is infront of background images */
@@ -30,7 +24,7 @@
 
 .stars, .twinkling, .clouds {
     animation: fadeInSky;
-    animation-duration: 4s;
+    animation-duration: 2s;
     position:absolute;
     top:0;
     left:0;
@@ -57,6 +51,56 @@
     z-index:2;
     opacity: .4;
     animation:move-clouds-back 200s linear infinite;
+}
+
+footer {
+    background: white;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    text-align:center;
+} 
+
+.footerContent {
+    color: black;
+    text-align:center;
+    vertical-align: middle;
+}
+
+footer a {
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+footer img {
+    display:inline-block;
+    width: 5vh;
+    height: 5vh;
+}
+
+#Gmail-Logo:hover {
+    filter: invert(12%) sepia(86%) saturate(6865%) hue-rotate(3deg) brightness(105%) contrast(118%);
+}
+
+#Github-Logo:hover {
+    filter: invert(70%) sepia(63%) saturate(6243%) hue-rotate(86deg) brightness(128%) contrast(112%);
+}
+
+#LinkedIn-Logo:hover {
+    filter: invert(10%) sepia(98%) saturate(5062%) hue-rotate(245deg) brightness(104%) contrast(156%);
+}
+
+.circle {
+    opacity: 1;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    z-index: 5;
 }
 
 @keyframes move-twink-back {
