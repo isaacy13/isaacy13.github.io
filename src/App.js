@@ -11,6 +11,10 @@ function App() {
       <div>
         <h2 className="zoomInAnimationByWord" id="placeholder">PLACEHOLDER</h2>
       </div>
+      <br></br>
+      <div>
+        <button id="skipButton" className="fadeSkipButtonIn"></button>
+      </div>
     </div>
   );
 }

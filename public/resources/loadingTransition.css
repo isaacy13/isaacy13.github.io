@@ -9,6 +9,17 @@
     to { opacity: 0; }
 }
 
+.fadeSkipButton {
+    animation: fadeSkipButton;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeSkipButton {
+    from { opacity: .3; }
+    to { opacity: 0; }
+}
+
 .title {
     animation: fadeInSky;
     animation-duration: 2s;
@@ -21,9 +32,13 @@
     z-index: 3;
 }
 
-.stars, .twinkling, .clouds {
+/* Fade in homepage elements */
+.planets, .sun, .stars, .twinkling, .clouds, .footer {
     animation: fadeInSky;
     animation-duration: 2s;
+}
+
+.stars, .twinkling, .clouds {
     position:absolute;
     top:0;
     left:0;
@@ -95,12 +110,26 @@ footer img {
     display: block;
     width: 20vh;
     height: 20vh;
-    z-index: 6;
+    z-index: 7;
     position: sticky;
     transition: width 1.5s, height 1.5s;
 }
 
 .planets:hover {
+    width: 30vh;
+    height: 30vh;   
+}
+
+.sun {
+    display: block;
+    width: 20vh;
+    height: 20vh;
+    z-index: 6;
+    position: sticky;
+    transition: width 1.5s, height 1.5s;
+}
+
+.sun:hover {
     width: 30vh;
     height: 30vh;   
 }
