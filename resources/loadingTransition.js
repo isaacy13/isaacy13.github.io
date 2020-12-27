@@ -35,6 +35,7 @@ function loadHomePage() {
     let textContent = document.createTextNode("HOMEPAGE");
     text.appendChild(textContent);
     title.appendChild(text);
+    text.style = "font-size: 8vh;";
     title.classList.add("title");
 
     let body = document.getElementById("root");
@@ -45,16 +46,37 @@ function loadHomePage() {
     body.appendChild(clouds);
     body.appendChild(title);
 
-    let circle = document.createElement("span");
-    circle.classList.add("circle");
+    // solar system of planets
+    let solarSystem = document.createElement("div");
 
-    body.appendChild(circle);
+    // planets in solar system
+    let planet1 = document.createElement("img");
+    planet1.src = "resources/orange.png";
+    planet1.classList.add("planets");
+    body.appendChild(planet1);
+
+    let planet2 = document.createElement("img");
+    planet2.src = "resources/saturn.png";
+    planet2.classList.add("planets");
+    body.appendChild(planet2);
+
+    let planet3 = document.createElement("img");
+    planet3.src = "resources/blue.png";
+    planet3.classList.add("planets");
+    body.appendChild(planet3);
+
+    // add planets in solar system
+    solarSystem.append(planet1);
+    solarSystem.append(planet2);
+    solarSystem.append(planet3);
+
+    // add solar system to page
+    body.append(solarSystem);
 
     // create a footer
     let footer = document.createElement("footer");
 
     /* add footer icon links */
-
     // LinkedIn
     let LinkedInLink = document.createElement("a");
     LinkedInLink.classList.add("footerContent");
@@ -110,7 +132,6 @@ function loadHomePage() {
             <h1>HOMEPAGE</h1>
         </div>
         <br>
-        <h1>test</h1>
 
         <footer class="footer">
         </footer>
