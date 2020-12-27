@@ -1,13 +1,23 @@
+// set a listener on skip button
+let skipButton = document.getElementById("skipButton").addEventListener("click", skipAnimation);
+
+// Skips animation on button press
+function skipAnimation() {
+    loadHomePage();
+}
+
+
 // Fades all words' opacity to 0 & loads starry sky homepage
 async function loadTransition() {
     let words = [document.getElementById("name"), document.getElementById("presenting"), document.getElementById("placeholder")];
     for (let i=0; i<words.length; i++){
         if (i == words.length-1) {
-            words[i].innerHTML = "";
+            document.getElementById("placeholder").style.visibility = "hidden";
             break;
         }
         words[i].classList.add("fadeToNone");
     }
+    document.getElementById("skipButton").classList.add("fadeSkipButton");
     await sleep(3200);
     loadHomePage();
 }
@@ -53,22 +63,25 @@ function loadHomePage() {
     let planet1 = document.createElement("img");
     planet1.src = "resources/orange.png";
     planet1.classList.add("planets");
-    body.appendChild(planet1);
 
     let planet2 = document.createElement("img");
     planet2.src = "resources/saturn.png";
     planet2.classList.add("planets");
-    body.appendChild(planet2);
 
     let planet3 = document.createElement("img");
-    planet3.src = "resources/blue.png";
+    planet3.src = "resources/tan.png";
     planet3.classList.add("planets");
-    body.appendChild(planet3);
 
     // add planets in solar system
     solarSystem.append(planet1);
     solarSystem.append(planet2);
     solarSystem.append(planet3);
+
+    // add sun in solar system
+    let sun = document.createElement("img");
+    sun.src = "resources/sun.png";
+    sun.classList.add("sun");
+    solarSystem.append(sun);
 
     // add solar system to page
     body.append(solarSystem);
