@@ -13,7 +13,6 @@
     animation: fadeInSky;
     animation-duration: 2s;
 
-    /* Styling the text and giving it gradiant */
     color:#ffffff;
 
     /* Make sure text is infront of background images */
@@ -89,18 +88,21 @@ footer img {
 }
 
 #LinkedIn-Logo:hover {
-    filter: invert(10%) sepia(98%) saturate(5062%) hue-rotate(245deg) brightness(104%) contrast(156%);
+    filter: invert(28%) sepia(97%) saturate(1253%) hue-rotate(176deg) brightness(95%) contrast(102%);
 }
 
-.circle {
-    opacity: 1;
-    height: 150px;
-    width: 150px;
-    background-color: white;
-    border-radius: 50%;
-    position: relative;
+.planets {
     display: block;
-    z-index: 5;
+    width: 20vh;
+    height: 20vh;
+    z-index: 6;
+    position: sticky;
+    transition: width 1.5s, height 1.5s;
+}
+
+.planets:hover {
+    width: 30vh;
+    height: 30vh;   
 }
 
 @keyframes move-twink-back {
