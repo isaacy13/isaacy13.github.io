@@ -30,10 +30,12 @@
     display:block;
     position: relative;
     z-index: 3;
+
+    font-size: 4vh;
 }
 
 /* Fade in homepage elements */
-.planets, .sun, .stars, .twinkling, .clouds, .footer {
+.stars, .twinkling, .clouds, .footer {
     animation: fadeInSky;
     animation-duration: 2s;
 }
@@ -106,34 +108,6 @@ footer img {
     filter: invert(28%) sepia(97%) saturate(1253%) hue-rotate(176deg) brightness(95%) contrast(102%);
 }
 
-.planets {
-    display: block;
-    width: 20vh;
-    height: 20vh;
-    z-index: 7;
-    position: sticky;
-    transition: width 1.5s, height 1.5s;
-}
-
-.planets:hover {
-    width: 30vh;
-    height: 30vh;   
-}
-
-.sun {
-    display: block;
-    width: 20vh;
-    height: 20vh;
-    z-index: 6;
-    position: sticky;
-    transition: width 1.5s, height 1.5s;
-}
-
-.sun:hover {
-    width: 30vh;
-    height: 30vh;   
-}
-
 @keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
@@ -147,4 +121,35 @@ footer img {
 @keyframes fadeInSky {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+.card {
+    display:inline;
+    z-index: 8;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1.5s;
+    width: 20vh;
+    height: 20vh;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+
+#planet img {
+    width: 100%;
+    height: 100%;
+}
+
+#planet {
+    opacity: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+#planet-container {
+    z-index: 7;
+    position: absolute;
+    padding-left: 30%;
+    margin-top: -1%;
 }

@@ -35,7 +35,7 @@
 @keyframes zoomInAnimationByWordL {
     0% { opacity: 0; transform: translateY(0vh); }
 
-    50% { opacity: 1; transform: translateY(1.5vh); }
+    50% { opacity: .6; transform: translateY(1.5vh); }
 
     100% { opacity: 0; transform: translateX(-1.5vh); }
 }
@@ -43,7 +43,7 @@
 @keyframes zoomInAnimationByWordM {
     0% { opacity: 0; transform: translateY(0vh);}
 
-    50% { opacity: 1; transform: translateY(1.5vh); }
+    50% { opacity: .6; transform: translateY(1.5vh); }
 
     100% { opacity: 0; transform: translateY(3vh); }
 }
@@ -51,7 +51,7 @@
 @keyframes zoomInAnimationByWordR {
     0% { opacity: 0; transform: translateY(0vh);}
 
-    50% { opacity: 1; transform: translateY(1.5vh) }
+    50% { opacity: .6; transform: translateY(1.5vh) }
 
     100% { opacity: 0; transform: translateX(1.5vh); }
 }
