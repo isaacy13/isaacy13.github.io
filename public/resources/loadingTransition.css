@@ -35,7 +35,7 @@
 }
 
 /* Fade in homepage elements */
-.stars, .twinkling, .footer, #page-header {
+.stars, .twinkling, .footer, .page-header {
     animation: fadeInSky;
     animation-duration: 2s;
 }
@@ -72,7 +72,7 @@ footer {
     text-align:center;
 } 
 
-#page-header {
+.page-header {
     background: white;
     width: 100%;
     height: fit-content;
@@ -81,13 +81,13 @@ footer {
     z-index: 3;
 }
 
-#page-header a, footer a {
+.page-header a, footer a {
     text-decoration: none;
     padding-left: 3vh;
     padding-right: 3vh;
 }
 
-#page-header img, footer img {
+.page-header img, footer img {
     vertical-align: middle;
     display: inline;
     width: 5vh;
@@ -103,12 +103,12 @@ footer {
     color: black;
 }
 
-#logo-container {
+.logo-container {
     width:fit-content;
     height: fit-content;
 }
 
-#logo-container:hover {
+.logo-container:hover {
     border-radius: 10px;
     animation: logo-container-change;
     animation-duration: 1s;

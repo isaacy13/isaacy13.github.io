@@ -28,8 +28,8 @@ function App() {
           <div className="twinkling"></div>
         </div>
 
-        <div id="page-header">
-          <div id="logo-container">
+        <div className="page-header">
+          <div className="logo-container">
             <a href="https://isaacy13.github.io/">
               <img src="resources/initials.png" alt="Website logo"></img>
               <h1 id="IY-Logo">ISAAC YEANG</h1>
