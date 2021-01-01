@@ -193,18 +193,10 @@ div section {
 }
 
 .about-me-card img {
-    background: rgba(255,255,255, .2);
+    background: rgba(255,255,255, 0);
     overflow: hidden;
-    border-radius: 10px;
 
     height: -webkit-fill-available;
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
-    transition: 0.3s;
-}
-
-.about-me-card img:hover {
-    box-shadow: 0 4px 8px 2px rgba(0,0,0,1);
 }
 
 .projects-ideas-card {
