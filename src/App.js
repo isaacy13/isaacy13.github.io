@@ -37,18 +37,37 @@ function App() {
           </div>
         </div>
 
-        <div className="grid grid-container">
-          <section> {/*card of information*/}
-            <p>
-              <header>ABOUT ME</header> {/*title*/}
-              <div>
-                <p>Hey! Welcome to my page. I love learning and creating! Check out some of my projects.</p>
-              </div> {/*information*/}
-            </p>
-            {/* <img src="resources/headshot.png" alt="headshot of Isaac Yeang"></img> image */}
-          </section>
-          <section></section>
-          <section></section>
+        <div className="grid-container">
+          <div className="grid">
+            <section className="about-me-card"> {/*card of information*/}
+              <p>
+                <header>ISAAC YEANG</header> {/*title*/}
+                <div>
+                  <p>Aspiring Developer</p>
+                </div> {/*information*/}
+              </p>
+              <img src="resources/headshot.png" alt="headshot of Isaac Yeang"></img>
+            </section>
+            <section> {/*card of information*/}
+              <section className="projects-ideas-card">
+                <p>
+                  <header>Projects & Ideas</header> {/*title*/}
+                  <div>
+                    <p>...</p>
+                  </div> {/*information*/}
+                </p>
+              </section>
+              <section className="skills-interests-card">
+                <p>
+                  <header>Skills & Interests</header> {/*title*/}
+                  <div>
+                    <p>...</p>
+                  </div> {/*information*/}
+                </p>
+              </section>
+            </section>
+            <section></section>
+          </div>
         </div>
 
         <footer>
