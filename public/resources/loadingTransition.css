@@ -20,20 +20,6 @@
     to { opacity: 0; }
 }
 
-.title {
-    animation: fadeInSky;
-    animation-duration: 2s;
-
-    color:#ffffff;
-
-    /* Make sure text is infront of background images */
-    display:block;
-    position: relative;
-    z-index: 2;
-
-    font-size: 4vh;
-}
-
 /* Fade in homepage elements */
 .stars, .twinkling, .footer, .page-header {
     animation: fadeInSky;
@@ -186,7 +172,7 @@ div section {
     background: rgb(0,64,106);
     background: linear-gradient(31deg, rgba(0,64,106,1) 0%, rgba(0,181,157,1) 100%);
 
-    width: fit-content;
+    height: 200px;
 }
 
 .about-me-card p header {
@@ -211,8 +197,7 @@ div section {
     overflow: hidden;
     border-radius: 10px;
 
-    min-width: 150px;
-    max-width: 150px;
+    height: -webkit-fill-available;
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
     transition: 0.3s;
