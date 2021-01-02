@@ -151,12 +151,11 @@ footer {
 }
 
 div section {
-    width:fit-content;
-    min-width: 661px;
+    width: 95%;
     margin: auto;
     display: flex;
     flex-direction: row;
-    column-gap: 24px;
+    min-width: 524px;
 }
 
 .about-me-card, .skills-interests-card, .projects-ideas-card {
@@ -173,34 +172,37 @@ div section {
     background: rgb(0,64,106);
     background: linear-gradient(31deg, rgba(0,64,106,1) 0%, rgba(0,181,157,1) 100%);
 
-    height: 200px;
+    min-height: 250px;
+    max-height: 250px;
+    max-width: 850px;
 }
 
 .about-me-card p header {
-    padding-top: 30px;
-    padding-left: 20px;
+    padding-top: 10px;
     color: #00dec0;
-    font-size: 8vh;
+    font-size: 75.4px;
     font-weight: 700;
     font-family: sans-serif;
 }
 
 .about-me-card p div {
-    padding-bottom: 30px;
-    padding-left: 20px;
-    font-size: 4vh;
+    padding-bottom: 10px;
+    font-size: 30.16px;
     font-weight: 400;
     font-family: Helvetica, sans-serif;
 }
 
 .about-me-card img {
-    background: rgba(255,255,255, 0);
-    overflow: hidden;
+    display: block;
+    position: relative;
 
-    height: -webkit-fill-available;
+    width: 250px;
 }
 
 .projects-ideas-card {
+    min-width: 40%;
+    max-width: 40%;
+
     border-radius: 10px;
     background: rgb(0,64,106);
     background: linear-gradient(31deg, rgb(171, 221, 255) 0%, rgb(115, 116, 115) 100%);
@@ -216,7 +218,7 @@ div section {
 
 .projects-ideas-card p header {
     padding-top: 30px;
-    font-size: 6vh;
+    font-size: 45.24px;
     font-weight: 700;
     font-family: sans-serif;
 }
@@ -224,12 +226,14 @@ div section {
 .projects-ideas-card p div {
     padding-bottom: 30px;
     padding-left: 20px;
-    font-size: 4vh;
+    font-size: 30.16px;
     font-weight: 400;
     font-family: Helvetica, sans-serif;
 }
 
 .skills-interests-card {
+    min-width: 40%;
+    max-width: 40%;
     border-radius: 10px;
     background: rgb(252, 254, 255);
     background: linear-gradient(31deg, rgb(0, 255, 21) 0%, rgb(255, 217, 0) 100%);
@@ -245,7 +249,7 @@ div section {
 
 .skills-interests-card p header {
     padding-top: 30px;
-    font-size: 6vh;
+    font-size: 45.24px;
     font-weight: 700;
     font-family: sans-serif;
 }
@@ -253,7 +257,7 @@ div section {
 .skills-interests-card p div {
     padding-bottom: 30px;
     padding-left: 20px;
-    font-size: 4vh;
+    font-size: 30.16px;
     font-weight: 400;
     font-family: Helvetica, sans-serif;
 }
