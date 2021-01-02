@@ -152,6 +152,7 @@ footer {
 
 div section {
     width:fit-content;
+    min-width: 661px;
     margin: auto;
     display: flex;
     flex-direction: row;
