@@ -47,19 +47,18 @@ function App() {
                   <p>Aspiring Developer</p>
                 </div> {/*information*/}
               </p>
-
-
             </section>
-            <section> {/*card of information*/}
-              <section className="projects-ideas-card">
+
+            <section className="projects-card">
                 <p>
-                  <header>Projects & Ideas</header> {/*title*/}
+                  <header>Projects</header> {/*title*/}
                   <div>
                     <p>...</p>
                   </div> {/*information*/}
                 </p>
               </section>
-              <section className="skills-interests-card">
+
+            <section className="skills-interests-card">
                 <p>
                   <header>Skills & Interests</header> {/*title*/}
                   <div>
@@ -67,7 +66,6 @@ function App() {
                   </div> {/*information*/}
                 </p>
               </section>
-            </section>
             <section></section>
           </div>
         </div>
