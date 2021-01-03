@@ -40,7 +40,9 @@ function App() {
         <div className="grid-container">
           <div className="grid">
             <section className="about-me-card"> {/*card of information*/}
-              <img src="resources/headshot.png" alt="headshot of Isaac Yeang"></img>
+              <div>
+                <img src="resources/headshot.png" alt="headshot of Isaac Yeang"></img>
+              </div>
               <p>
                 <header>ISAAC YEANG</header> {/*title*/}
                 <div>

@@ -161,8 +161,6 @@ footer {
 div section {
     width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
     
     min-width: 275px;
 }
@@ -178,14 +176,14 @@ div section {
 
 .about-me-card {
     border-radius: 10px;
-    background: rgb(80,0,0);
-    background: linear-gradient(180deg, rgb(43 0 0) 0%, rgb(80,0,0) 30%, rgb(252 104 104) 100%);
-    flex-wrap: wrap;
+
+    background: rgb(255,46,0);
+    background: linear-gradient(31deg, rgba(255,46,0,1) 0%, rgba(80,0,0,1) 100%);
 }
 
 .about-me-card p header {
     padding-top: 10px;
-    color: #821818;
+    color: #da2400;
     font-size: 75.4px;
     font-weight: 700;
     font-family: sans-serif;
@@ -198,7 +196,7 @@ div section {
     font-family: Helvetica, sans-serif;
 }
 
-.about-me-card img {
+.about-me-card div img {
     display: block;
     position: relative;
 
@@ -209,15 +207,13 @@ div section {
 }
 
 .about-me-card > p {
-    background: rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, 50%);
     text-align: center;
 
     width: 100%;
 }
 
 .projects-card {
-    flex-wrap: nowrap;
-
     border-radius: 10px;
     background: rgb(0,64,106);
     background: linear-gradient(31deg, rgb(171, 221, 255) 0%, rgb(115, 116, 115) 100%);
@@ -245,8 +241,6 @@ div section {
 }
 
 .skills-interests-card {
-    flex-wrap: nowrap;
-
     border-radius: 10px;
     background: rgb(252, 254, 255);
     background: linear-gradient(31deg, rgb(0, 255, 21) 0%, rgb(255, 217, 0) 100%);
