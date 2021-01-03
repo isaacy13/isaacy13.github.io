@@ -52,19 +52,23 @@ footer {
     background: white;
     width: 100%;
     height: fit-content;
-    position: fixed;
+    position: relative;
     bottom: 0;
     z-index: 3;
     text-align:center;
+
+    min-width: 365px;
 } 
 
 .page-header {
     background: white;
     width: 100%;
     height: fit-content;
-    position:fixed;
+    position: relative;
     top: 0;
     z-index: 3;
+
+    min-width: 365px;
 }
 
 .page-header a, footer a {
@@ -137,49 +141,51 @@ footer {
 .grid-container {
     width: 100%;
     position: relative;
-    z-index: 100;
+    z-index: 2;
 }
 
 .grid {
     position:relative;
-    z-index: 2;
     grid-row-gap: 24px;
 
+    margin: auto;
     margin-top: 10vh;  
     padding-bottom: 0;
     display: grid;
+    grid-auto-columns: 75%;
+    
+    width: fit-content;
+    justify-content: center;
 }
 
 div section {
-    width: 95%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
-    min-width: 524px;
+    
+    min-width: 275px;
 }
 
-.about-me-card, .skills-interests-card, .projects-ideas-card {
+.about-me-card, .skills-interests-card, .projects-card {
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.1);
     transition: 0.3s;
 }
 
-.about-me-card:hover, .skills-interests-card:hover, .projects-ideas-card:hover {
+.about-me-card:hover, .skills-interests-card:hover, .projects-card:hover {
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, .6);
 }
 
 .about-me-card {
     border-radius: 10px;
-    background: rgb(0,64,106);
-    background: linear-gradient(31deg, rgba(0,64,106,1) 0%, rgba(0,181,157,1) 100%);
-
-    min-height: 250px;
-    max-height: 250px;
-    max-width: 850px;
+    background: rgb(80,0,0);
+    background: linear-gradient(180deg, rgb(43 0 0) 0%, rgb(80,0,0) 30%, rgb(252 104 104) 100%);
+    flex-wrap: wrap;
 }
 
 .about-me-card p header {
     padding-top: 10px;
-    color: #00dec0;
+    color: #821818;
     font-size: 75.4px;
     font-weight: 700;
     font-family: sans-serif;
@@ -196,18 +202,25 @@ div section {
     display: block;
     position: relative;
 
-    width: 250px;
+    width: 40%;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.projects-ideas-card {
-    min-width: 40%;
-    max-width: 40%;
+.about-me-card > p {
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+
+    width: 100%;
+}
+
+.projects-card {
+    flex-wrap: nowrap;
 
     border-radius: 10px;
     background: rgb(0,64,106);
     background: linear-gradient(31deg, rgb(171, 221, 255) 0%, rgb(115, 116, 115) 100%);
-
-    width: fit-content;
 
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
     transition: 0.3s;
@@ -216,14 +229,14 @@ div section {
     padding-right: 20px;
 }
 
-.projects-ideas-card p header {
+.projects-card p header {
     padding-top: 30px;
     font-size: 45.24px;
     font-weight: 700;
     font-family: sans-serif;
 }
 
-.projects-ideas-card p div {
+.projects-card p div {
     padding-bottom: 30px;
     padding-left: 20px;
     font-size: 30.16px;
@@ -232,13 +245,11 @@ div section {
 }
 
 .skills-interests-card {
-    min-width: 40%;
-    max-width: 40%;
+    flex-wrap: nowrap;
+
     border-radius: 10px;
     background: rgb(252, 254, 255);
     background: linear-gradient(31deg, rgb(0, 255, 21) 0%, rgb(255, 217, 0) 100%);
-
-    width: fit-content;
 
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
     transition: 0.3s;

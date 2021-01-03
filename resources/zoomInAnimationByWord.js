@@ -14,7 +14,7 @@ function waitForFinish() {
 
 /* then, do the next animation */
 async function animation3 () {
-    let wordBank = ["a passion", "projects & ideas", "an experience"];
+    let wordBank = ["a passion", "inspired projects", "an experience"];
     for (let i=0; i < wordBank.length; i++) {
         let placeholder = document.getElementById("placeholder");
         placeholder.innerHTML = wordBank[i];
