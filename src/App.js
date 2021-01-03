@@ -5,6 +5,8 @@
 import './App.css';
 function App() {
   return (
+
+    // Initial Loading Screen
     <div>
       <div className="centerDiv" id="prezi">
         <div>
@@ -22,6 +24,7 @@ function App() {
         </div>
       </div>
 
+      {/*  Actual homepage */}
       <div style={{ display:"none" }} id="homepage">
         <div id="decorations">
           <div className="stars"></div>
@@ -39,7 +42,7 @@ function App() {
 
         <div className="grid-container">
           <div className="grid">
-            <section className="about-me-card"> {/*card of information*/}
+            <section className="about-me-card span-12"> {/*card of information*/}
               <div>
                 <img src="resources/headshot.png" alt="headshot of Isaac Yeang"></img>
               </div>
@@ -51,27 +54,46 @@ function App() {
               </p>
             </section>
 
-            <section className="projects-card">
-                <p>
-                  <header>Projects</header> {/*title*/}
-                  <div>
-                    <p>...</p>
-                  </div> {/*information*/}
-                </p>
-              </section>
+            <section className="projects-card span-12">
+              <p>
+                <header>Projects</header> {/*title*/}
+                <div>
+                  <p>...</p>
+                </div> {/*information*/}
+              </p>
+            </section>
 
-            <section className="skills-interests-card">
-                <p>
-                  <header>Skills & Interests</header> {/*title*/}
-                  <div>
-                    <p>...</p>
-                  </div> {/*information*/}
-                </p>
-              </section>
-            <section></section>
+            <section className="skills-interests-card span-12">
+              <p>
+                <header>Skills & Interests</header> {/*title*/}
+                <div>
+                  <p>...</p>
+                </div> {/*information*/}
+              </p>
+            </section>
+
+            <section className="education-card span-6">
+              <p>
+                <header>Education</header>
+                <div>
+                  <p>...</p>
+                </div>
+              </p>
+            </section>
+      
+            <section className="achievements-awards-card span-6">
+              <p>
+                <header>Achievements & Awards</header>
+                <div>
+                  <p>...</p>
+                </div>
+              </p>
+            </section>
+            
+            
           </div>
         </div>
-
+        
         <footer>
           <a href="mailto:isaac.yeang@aggienetwork.com" id="Gmail-Logo">
             <img src="resources/gmail.png" title="Email me" alt="Email Link"></img>
