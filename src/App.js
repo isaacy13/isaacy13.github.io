@@ -49,12 +49,12 @@ function App() {
               <p>
                 <header>ISAAC YEANG</header> {/*title*/}
                 <div>
-                  <p>Aspiring Developer</p>
+                  <p>Developer</p>
                 </div> {/*information*/}
               </p>
             </section>
 
-            <section className="projects-card span-12">
+            <section className="projects-card span-6">
               <p>
                 <header>Projects</header> {/*title*/}
                 <div>
@@ -63,7 +63,7 @@ function App() {
               </p>
             </section>
 
-            <section className="skills-interests-card span-12">
+            <section className="skills-interests-card span-6">
               <p>
                 <header>Skills & Interests</header> {/*title*/}
                 <div>
@@ -83,7 +83,7 @@ function App() {
       
             <section className="achievements-awards-card span-6">
               <p>
-                <header>Achievements & Awards</header>
+                <header>Awards</header>
                 <div>
                   <p>...</p>
                 </div>
