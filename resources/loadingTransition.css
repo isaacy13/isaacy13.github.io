@@ -1,6 +1,6 @@
 .fadeToNone {
     animation: fadeToNone;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -11,7 +11,7 @@
 
 .fadeSkipButton {
     animation: fadeSkipButton;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -21,8 +21,8 @@
 }
 
 /* Fade in homepage elements */
-.stars, .twinkling, footer, .page-header {
-    animation: fadeInSky;
+.stars, .twinkling, footer, .page-header, .about-me-card, .skills-interests-card, .projects-card, .education-card, .achievements-awards-card {
+    animation: fadeIn;
     animation-duration: 2s;
 }
 
@@ -133,7 +133,7 @@ footer {
     to {background-position:10000px 0;}
 }
 
-@keyframes fadeInSky {
+@keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
