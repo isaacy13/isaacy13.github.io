@@ -74,6 +74,10 @@ div section {
     background: linear-gradient(31deg, rgb(171, 221, 255) 0%, rgb(115, 116, 115) 100%);
 }
 
+.about-me-card div {
+    background-image: url("backdrop.png");
+}
+
 .about-me-card header, .projects-card header, .skills-interests-card header, .education-card header, .achievements-awards-card header {
     padding-top: 10px;
     color: rgb(171 221 255);
