@@ -24,7 +24,6 @@ function App() {
         </div>
       </div>
 
-      {/*  Actual homepage */}
       <div style={{ display:"none" }} id="homepage">
         <div id="decorations">
           <div className="stars"></div>
@@ -42,52 +41,100 @@ function App() {
 
         <div className="grid-container">
           <div className="grid">
-            <section className="about-me-card span-12"> {/*card of information*/}
+            <section className="about-me-card span-12" tabindex="0">
               <div>
                 <img src="resources/headshot.png" alt="headshot of Isaac Yeang"></img>
               </div>
               <p>
-                <header>ISAAC YEANG</header> {/*title*/}
+                <header>ISAAC YEANG</header>
                 <div>
                   <p>Developer</p>
-                </div> {/*information*/}
-              </p>
-            </section>
-
-            <section className="projects-card span-6">
-              <p>
-                <header>Projects</header> {/*title*/}
-                <div>
-                  <p>...</p>
-                </div> {/*information*/}
-              </p>
-            </section>
-
-            <section className="skills-interests-card span-6">
-              <p>
-                <header>Skills & Interests</header> {/*title*/}
-                <div>
-                  <p>...</p>
-                </div> {/*information*/}
-              </p>
-            </section>
-
-            <section className="education-card span-6">
-              <p>
-                <header>Education</header>
-                <div>
-                  <p>...</p>
                 </div>
               </p>
+            </section>
+
+            <section className="projects-card span-6" tabindex="0">
+              <header>Projects</header>
+
+              <div className="projects-card-desc">
+                  <p>...</p>
+              </div>
+
+              <div className="projects-card-list" style = {{display: "none"}}>
+                <div>
+                  <p>
+                    blah blah blah blah blah stuff stuff
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    blah blah blah blah blah stuff stuff
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className="skills-interests-card span-6" tabindex="0">
+              <header>Skills & Interests</header>
+
+              <div className="skills-interests-card-desc">
+                <p>...</p>
+              </div>
+
+              <div className="skills-interests-card-list" style = {{display: "none"}}>
+                <div>
+                  <p>
+                    blah blah blah blah blah stuff stuff
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    blah blah blah blah blah stuff stuff
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className="education-card span-6" tabindex="0">
+              <header>Education</header>
+
+              <div className="education-card-desc">
+                <p>...</p>
+              </div>
+
+              <div className="education-card-list" style = {{display: "none"}}>
+                <div>
+                  <p>
+                    blah blah blah blah blah stuff stuff
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    blah blah blah blah blah stuff stuff
+                  </p>
+                </div>
+              </div>
             </section>
       
             <section className="achievements-awards-card span-6">
-              <p>
-                <header>Awards</header>
+              <header>Awards</header>
+
+              <div className="achievements-awards-card-desc">
+                <p>...</p>
+              </div>
+
+              <div className="achievements-awards-card-list" style = {{display: "none"}}>
                 <div>
-                  <p>...</p>
+                  <p>
+                    blah blah blah blah blah stuff stuff
+                  </p>
                 </div>
-              </p>
+                <div>
+                  <p>
+                    blah blah blah blah blah stuff stuff
+                  </p>
+                </div>
+              </div>
             </section>
             
             
