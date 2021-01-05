@@ -4,7 +4,7 @@ span {
     display:inline-block; /* inline-block so text can ignore margins for animation */
     padding:1px; /* added for a bit of space b/w letters */
     font-family: sans-serif;
-    font-size: 8vw;
+    font-size: 100px;
 
     /* Animation stuff */
     animation-play-state: paused;
@@ -13,13 +13,19 @@ span {
     opacity: 0;
 }
 
+@media only screen and (max-width: 875px) {
+    span {
+        font-size: 10vw;
+    }
+}
+
 /* individually moves/translates each "character" (aka span that we converted) */
 span.textFlyInAnimationByLetter {
     opacity: 1;
     transform: translateY(0px);
 }
 
-/* Skip button & nav buttons */
+/* Skip button */
 button {
     background: transparent;
     border: none;
@@ -27,6 +33,13 @@ button {
     width: 15vh;
     height: 15vh;
     opacity: .3;
+}
+
+@media only screen and (max-width: 875px) {
+    button {
+        width: 20vw;
+        height: 20vw;
+    }
 }
 
 .navButtons {

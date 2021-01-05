@@ -7,7 +7,7 @@ function App() {
   return (
 
     // Initial Loading Screen
-    <div>
+    <div className="centerDiv-container">
       <div className="centerDiv" id="prezi">
         <div>
           <h1 className="flyInAnimationByLetter" id="name">ISAAC YEANG</h1>

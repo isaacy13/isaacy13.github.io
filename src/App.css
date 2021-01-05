@@ -12,7 +12,20 @@ body {
   color: white;
 }
 
+.centerDiv-container {
+  position:relative;
+  height: 100vh;
+}
+
 .centerDiv {
   text-align: center;
-  margin: 9vw;
+  top: 20%;
+  position: absolute;
+  width: 100%;
+}
+
+@media only screen and (max-width: 450px) {
+  .centerDiv {
+    top: 30%;
+  }
 }
