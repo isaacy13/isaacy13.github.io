@@ -57,7 +57,8 @@ function App() {
               <header>Projects</header>
 
               <div className="projects-card-desc">
-                  <p>...</p>
+                  <p>Item 1</p>
+                  <p>Item 2</p>
               </div>
 
               <div className="projects-card-list" style = {{display: "none"}}>
@@ -78,7 +79,8 @@ function App() {
               <header>Skills & Interests</header>
 
               <div className="skills-interests-card-desc">
-                <p>...</p>
+                <p>Item 1</p>
+                <p>Item 2</p>
               </div>
 
               <div className="skills-interests-card-list" style = {{display: "none"}}>
@@ -99,7 +101,8 @@ function App() {
               <header>Education</header>
 
               <div className="education-card-desc">
-                <p>...</p>
+                <p>Item 1</p>
+                <p>Item 2</p>
               </div>
 
               <div className="education-card-list" style = {{display: "none"}}>
@@ -116,11 +119,12 @@ function App() {
               </div>
             </section>
       
-            <section className="achievements-awards-card span-6">
+            <section className="achievements-awards-card span-6" tabindex="0">
               <header>Awards</header>
 
               <div className="achievements-awards-card-desc">
-                <p>...</p>
+                <p>Item 1</p>
+                <p>Item 2</p>
               </div>
 
               <div className="achievements-awards-card-list" style = {{display: "none"}}>
