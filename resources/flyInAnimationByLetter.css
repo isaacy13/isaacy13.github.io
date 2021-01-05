@@ -25,48 +25,25 @@ span.textFlyInAnimationByLetter {
     transform: translateY(0px);
 }
 
-/* Skip button */
-button {
+@media only screen and (max-width: 875px) {
+    #skipButton {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+#skipButton {
     background: transparent;
     border: none;
     background-size: 100%;
     width: 15vh;
     height: 15vh;
     opacity: .3;
-}
 
-@media only screen and (max-width: 875px) {
-    button {
-        width: 20vw;
-        height: 20vw;
-    }
-}
-
-.navButtons {
-    display:inline-block;
-}
-
-#skipButton {
     text-align: center;
     background-image: url("skip.png");
 }
 
-#leftButton, #rightButton {
-    top: 40%;
-    position: absolute;
-    z-index: 10;
-}
-
-#leftButton {
-    left: 0%;
-    background-image: url("left_arrow.png");
-}
-
-#rightButton {
-    right: 0%;
-    background-image: url("right_arrow.png");
-}
-
-button:hover {
+#skipButton:hover {
     opacity: .6;
 }
