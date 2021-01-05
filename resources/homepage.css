@@ -69,6 +69,12 @@ div section {
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, .6);
 }
 
+.about-me-card > div {
+    background-image: url("backdrop.png");
+    background-size: 100%;
+    background-position: top;
+}
+
 .about-me-card {
     background: rgb(171, 221, 255);
     background: linear-gradient(31deg, rgb(171, 221, 255) 0%, rgb(115, 116, 115) 100%);
