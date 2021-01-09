@@ -1,10 +1,10 @@
 .grid-container {
     width: 100%;
     position: relative;
-    z-index: 2;
 }
 
 .grid {
+    z-index: 2;
     position:relative;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -29,13 +29,13 @@ div section {
     min-width: 350px;
 }
 
-.about-me-card, .skills-interests-card, .projects-card, .education-card, .achievements-awards-card {
+.about-me-card, .skills-interests-card, .projects-card, .education-card, .achievements-awards-card, .affiliations-card, .goals-card {
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.1);
     transition: 0.3s;
     border-radius: 10px;
 }
 
-.skills-interests-card, .projects-card, .education-card, .achievements-awards-card {
+.skills-interests-card, .projects-card, .education-card, .achievements-awards-card, .affiliations-card, .goals-card {
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.2);
     transition: 0.3s;
     height: 100%;
@@ -61,11 +61,21 @@ div section {
     background: linear-gradient(0deg, rgb(202, 206, 94) 0%, rgba(255,123,0,1) 100%);
 }
 
-.skills-interests-card, .projects-card, .education-card, .achievements-awards-card {
+.affiliations-card { 
+    background: rgb(3,163,0);
+    background: linear-gradient(0deg, rgba(3,163,0,1) 0%, rgba(202,206,94,1) 100%);
+}
+
+.goals-card {
+    background: rgb(52,207,182);
+    background: linear-gradient(0deg, rgba(52,207,182,1) 0%, rgba(2,90,0,1) 100%);
+}
+
+.skills-interests-card, .projects-card, .education-card, .achievements-awards-card, .affiliations-card, .goals-card {
     overflow: hidden;
 }
 
-.about-me-card:hover, .skills-interests-card:hover, .projects-card:hover, .education-card:hover, .achievements-awards-card:hover {
+.about-me-card:hover, .skills-interests-card:hover, .projects-card:hover, .education-card:hover, .achievements-awards-card:hover, .affiliations-card:hover, .goals-card:hover {
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, .6);
 }
 
@@ -80,7 +90,7 @@ div section {
     background: linear-gradient(31deg, rgb(171, 221, 255) 0%, rgb(115, 116, 115) 100%);
 }
 
-.about-me-card header, .projects-card header, .skills-interests-card header, .education-card header, .achievements-awards-card header {
+.about-me-card header, .projects-card header, .skills-interests-card header, .education-card header, .achievements-awards-card header, .affiliations-card header, .goals-card header {
     padding-top: 10px;
     color: rgb(171 221 255);
     font-size: 75.4px;
@@ -88,7 +98,7 @@ div section {
     font-family: sans-serif;
 }
 
-.projects-card header, .skills-interests-card header, .education-card header, .achievements-awards-card header {
+.projects-card header, .skills-interests-card header, .education-card header, .achievements-awards-card header, .affiliations-card header, .goals-card header {
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -97,24 +107,32 @@ div section {
     padding-top: 10px;
     padding-bottom: 10px;
     background: rgba(0, 0, 0, .2);
-    font-size: 45.24px;
+    font-size: 40px;
     font-weight: 700;
     font-family: sans-serif;
 }
 
-.about-me-card > p > div, .projects-card > div, .skills-interests-card > div, .education-card > div, .achievements-awards-card > div {
+.about-me-card > p > div{
     padding-bottom: 10px;
-    font-size: 30.16px;
+    font-size: 30px;
     font-weight: 400;
     font-family: Helvetica, sans-serif;
 }
 
-.projects-card-desc p, .skills-interests-card-desc p, .education-card-desc p, .achievements-awards-card-desc p {
+.card-desc {
     display: block;
-    padding-right: 8px;
+    width: 100%;
 }
 
-.projects-card > div, .skills-interests-card > div, .education-card > div, .achievements-awards-card > div {
+.card-desc p {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: Helvetica, sans-serif;
+}
+
+.projects-card > div, .skills-interests-card > div, .education-card > div, .achievements-awards-card > div, .affiliations-card > div, .goals-card > div {
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
@@ -136,6 +154,8 @@ div section {
     background: rgba(0, 0, 0, 50%);
     text-align: center;
 
+    margin-bottom: 0;
+
     width: 100%;
 }
 
@@ -146,6 +166,67 @@ div section {
 .span-6 {
     grid-column: span 6;
 }
+
+.popup-window {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    opacity: .95;
+
+    animation: popup-flyin;
+    animation-duration: 1s;
+}
+
+@keyframes popup-flyin {
+    from { top: -300px; }
+    to { top: 0px; }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-window-content {
+    position: relative;
+    padding: 0;
+    border: 1px solid gray;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+#popup-title {
+    font-size: 60px;
+}
+
+.popup-window-header {
+    background: rgba(0, 0, 0, .2);
+    padding-bottom: 10px;
+}
+
+.popup-window-body {
+    font-size: 40px;
+}
+
+.popup-text { 
+    display: none;
+}
+
 
 @media only screen and (max-width: 1220px) {
     .span-6 {
@@ -160,12 +241,12 @@ div section {
         padding-bottom: 24px;
     }
 
-    .about-me-card, .skills-interests-card, .projects-card, .education-card, .achievements-awards-card {
+    .about-me-card, .skills-interests-card, .projects-card, .education-card, .achievements-awards-card, .affiliations-card, .goals-card {
         min-width: unset;
         width: 80vw;
     }
 
-    .about-me-card header, .skills-interests-card header, .projects-card header, .education-card header, .achievements-awards-card header {
+    .about-me-card header, .skills-interests-card header, .projects-card header, .education-card header, .achievements-awards-card header, .affiliations-card header, .goals-card header {
         font-size: 10vw;
     }
 
@@ -188,21 +269,12 @@ div section {
         min-width: 270px;
         width: 100%;
     }
-}
 
-.projects-card-expanded, .skills-interests-card-expanded, .education-card-expanded, .achievements-awards-card-expanded {
-    /* max-height: unset; */
-    /* height: max-content; */
-    /* grid-column: span 12; */
-}
+    #popup-title {
+        font-size: 35px;
+    }
 
-@keyframes animate-card-expand {
-    from { 
-        grid-column: span 12;
-        /* max-height: unset; 
-        height: auto; */
-    } to {
-        grid-column: span 6;
-        /* height: max-content; */
+    .popup-window-body {
+        font-size: 25px;
     }
 }

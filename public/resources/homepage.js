@@ -1,81 +1,31 @@
-// homepage interaction with cards
-let projectsCard = document.querySelector(".projects-card");
-projectsCard.addEventListener("click", card1);
-let projectsCardOpen = false;
-let projectsCardDesc = document.querySelector(".projects-card-desc");
-let projectsCardList = document.querySelector(".projects-card-list");
+// list of clickable cards
+let cards = document.querySelectorAll(".card");
+let cardsDesc = document.querySelectorAll(".popup-text");
+// "global" variable to pull out of openPopup func
+let currentWindow = null;
 
-let skillsInterestsCard = document.querySelector(".skills-interests-card");
-skillsInterestsCard.addEventListener("click", card2);
-let skillsInterestsCardOpen = false;
-let skillsInterestsDesc = document.querySelector(".skills-interests-card-desc");
-let skillsInterestsList = document.querySelector(".skills-interests-card-list");
+// set onclick listeners for cards
+for (let i = 0; i < cards.length; i++)
+    cards[i].addEventListener("click", function() { openPopup(i) });
 
-let educationCard = document.querySelector(".education-card");
-educationCard.addEventListener("click", card3);
-let educationCardOpen = false;
-let educationCardDesc = document.querySelector(".education-card-desc");
-let educationCardList = document.querySelector(".education-card-list");
-
-let achievementsAwardsCard = document.querySelector(".achievements-awards-card");
-achievementsAwardsCard.addEventListener("click", card4);
-let achievementsAwardsCardOpen = false;
-let achievementsAwardsDesc = document.querySelector(".achievements-awards-card-desc");
-let achievementsAwardsCardList = document.querySelector(".achievements-awards-card-list");
-
-// open or close projects card
-function card1() {
-    if (!projectsCardOpen) {
-        projectsCardOpen = true;
-        projectsCard.classList.add("projects-card-expanded");
-        projectsCardDesc.style = "display: none";
-        projectsCardList.style = "";
-    } else {
-        projectsCardOpen = false;
-        projectsCard.classList.remove("projects-card-expanded");
-        projectsCardList.style = "display: none";
-        projectsCardDesc.style = "";
-    }
+// styles popup (based on selected card) & makes popup displayable
+function openPopup(num) {
+    currentWindow = num;
+    // changing header of popup
+    document.getElementById("popup-title").innerHTML = cards[num].getElementsByTagName("header")[0].textContent + " Overview";
+    // styling popup based on card
+    document.querySelector(".popup-window-content").classList.add(cards[num].classList[0]);
+    // changing display from none to flex
+    cardsDesc[num].style.display = "flex";
+    document.querySelector(".popup-window").style.display = "flex";
 }
 
-function card2() {
-    if (!skillsInterestsCardOpen) {
-        skillsInterestsCardOpen = true;
-        skillsInterestsCard.classList.add("skills-interests-card-expanded");
-        skillsInterestsList.style = "";
-        skillsInterestsDesc.style = "display: none";
-    } else {
-        skillsInterestsCardOpen = false;
-        skillsInterestsCard.classList.remove("skills-interests-card-expanded");
-        skillsInterestsList.style = "display: none";
-        skillsInterestsDesc.style = "";
-    }
-}
-
-function card3() {
-    if (!educationCardOpen) {
-        educationCardOpen = true;
-        educationCard.classList.add("skills-interests-card-expanded");
-        educationCardList.style = "";
-        educationCardDesc.style = "display: none";
-    } else {
-        educationCardOpen = false;
-        educationCard.classList.remove("skills-interests-card-expanded");
-        educationCardList.style = "display: none";
-        educationCardDesc.style = "";
-    }
-}
-
-function card4() {
-    if (!achievementsAwardsCardOpen) {
-        achievementsAwardsCardOpen = true;
-        achievementsAwardsCard.classList.add("skills-interests-card-expanded");
-        achievementsAwardsCardList.style = "";
-        achievementsAwardsDesc.style = "display: none";
-    } else {
-        achievementsAwardsCardOpen = false;
-        achievementsAwardsCard.classList.remove("skills-interests-card-expanded");
-        achievementsAwardsCardList.style = "display: none";
-        achievementsAwardsDesc.style = "";
-    }
+// closes popup & removes styling
+document.querySelector(".close").addEventListener("click", function() { closePopup(currentWindow); });
+function closePopup(num) {
+    // remove styling
+    document.querySelector(".popup-window-content").classList.remove(cards[num].classList[0]);
+    // display none
+    cardsDesc[num].style.display = "none";
+    document.querySelector(".popup-window").style.display = "none";
 }

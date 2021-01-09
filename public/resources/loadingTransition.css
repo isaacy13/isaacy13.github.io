@@ -21,9 +21,11 @@
 }
 
 /* Fade in homepage elements */
-.stars, .twinkling, footer, .page-header, .about-me-card, .skills-interests-card, .projects-card, .education-card, .achievements-awards-card {
+.stars, .twinkling, footer, .page-header,
+.about-me-card, .skills-interests-card, .projects-card, .education-card, .achievements-awards-card,
+.affiliations-card, .goals-card {
     animation: fadeIn;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .stars, .twinkling {
