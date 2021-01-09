@@ -1,3 +1,9 @@
+#decorations {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
+
 .grid-container {
     width: 100%;
     position: relative;
@@ -43,32 +49,32 @@ div section {
 
 .projects-card {
     background: #4857ba;
-    background: linear-gradient(to top, #96ace6,#4857ba);
+    background: linear-gradient(to top, rgba(150, 172, 230, .9),rgba(72, 87, 186, .9));
 }
 
 .skills-interests-card {
     background: rgb(72,87,186);
-    background: linear-gradient(to top, rgba(194,125,207,1), rgba(72,87,186,1));
+    background: linear-gradient(to top, rgba(194,125,207,.9), rgba(72,87,186,.9));
 }
 
 .education-card {
     background: rgb(255,160,72);
-    background: linear-gradient(0deg, rgba(255,160,72,1) 0%, rgba(194,125,207,1) 100%);
+    background: linear-gradient(0deg, rgba(255,160,72,.9) 0%, rgba(194,125,207,.9) 100%);
 }
 
 .achievements-awards-card {
     background: rgb(245,255,0);
-    background: linear-gradient(0deg, rgb(202, 206, 94) 0%, rgba(255,123,0,1) 100%);
+    background: linear-gradient(0deg, rgba(202, 206, 94,.9) 0%, rgba(255,123,0,.9) 100%);
 }
 
 .affiliations-card { 
     background: rgb(3,163,0);
-    background: linear-gradient(0deg, rgba(3,163,0,1) 0%, rgba(202,206,94,1) 100%);
+    background: linear-gradient(0deg, rgba(3,163,0,.9) 0%, rgba(202,206,94,.9) 100%);
 }
 
 .goals-card {
     background: rgb(52,207,182);
-    background: linear-gradient(0deg, rgba(52,207,182,1) 0%, rgba(2,90,0,1) 100%);
+    background: linear-gradient(0deg, rgba(52,207,182,.9) 0%, rgba(2,90,0,.9) 100%);
 }
 
 .skills-interests-card, .projects-card, .education-card, .achievements-awards-card, .affiliations-card, .goals-card {
@@ -87,7 +93,7 @@ div section {
 
 .about-me-card {
     background: rgb(171, 221, 255);
-    background: linear-gradient(31deg, rgb(171, 221, 255) 0%, rgb(115, 116, 115) 100%);
+    background: linear-gradient(31deg, rgba(171, 221, 255, .9) 0%, rgba(115, 116, 115, .9) 100%);
 }
 
 .about-me-card header, .projects-card header, .skills-interests-card header, .education-card header, .achievements-awards-card header, .affiliations-card header, .goals-card header {
