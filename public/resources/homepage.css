@@ -182,15 +182,14 @@ div section {
     width: 100%;
     height: 100%;
     overflow: auto;
-    opacity: .95;
 
     animation: popup-flyin;
     animation-duration: 1s;
 }
 
 @keyframes popup-flyin {
-    from { top: -300px; }
-    to { top: 0px; }
+    from { top: -300px; height: 0%; opacity: 0;}
+    to { top: 0px; height: 100%; opacity: 1;}
 }
 
 .close {
@@ -231,6 +230,21 @@ div section {
 
 .popup-text { 
     display: none;
+}
+
+.card {
+    visibility: hidden;
+}
+
+.cardFlyIn {
+    animation: cardFlyIn;
+    animation-duration: 1.5s;
+    visibility: visible;
+}
+
+@keyframes cardFlyIn {
+    from { opacity: 0; transform: translateY(300px); height: 0%; }
+    to { opacity: 1; transform: translateY(0px); height: 100%; }
 }
 
 
