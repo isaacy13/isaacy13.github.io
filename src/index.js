@@ -12,8 +12,8 @@ import Awards from './Awards';
 import Affiliations from './Affiliations';
 import Goals from './Goals';
 
-import { BrowserRouter as Router } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
+import { HashRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
