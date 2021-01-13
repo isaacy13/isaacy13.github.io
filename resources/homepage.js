@@ -1,33 +1,54 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 // list of clickable cards
 let cards = document.querySelectorAll(".card");
-let cardsDesc = document.querySelectorAll(".popup-text");
-// "global" variable to pull out of openPopup func
-let currentWindow = null;
 
 // set onclick listeners for cards
 for (let i = 0; i < cards.length; i++)
-    cards[i].addEventListener("click", function() { openPopup(i) });
+    cards[i].addEventListener("click", function() { cardFlyOut(cards, i) });
 
-// styles popup (based on selected card) & makes popup displayable
-function openPopup(num) {
-    currentWindow = num;
-    // changing header of popup
-    document.getElementById("popup-title").innerHTML = cards[num].getElementsByTagName("header")[0].textContent + " Overview";
-    // styling popup based on card
-    document.querySelector(".popup-window-content").classList.add(cards[num].classList[0]);
-    // changing display from none to flex
-    cardsDesc[num].style.display = "flex";
-    document.querySelector(".popup-window").style.display = "flex";
-}
+async function cardFlyOut(cards, num) {
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].classList.remove("cardFlyIn");
+        cards[i].classList.add("cardFlyOut");
+    }
+    
+    document.getElementsByTagName("footer")[0].classList.remove("fadeIn");
+    document.getElementsByTagName("footer")[0].classList.add("fadeOut");
 
-// closes popup & removes styling
-document.querySelector(".close").addEventListener("click", function() { closePopup(currentWindow); });
-function closePopup(num) {
-    // remove styling
-    document.querySelector(".popup-window-content").classList.remove(cards[num].classList[0]);
-    // display none
-    cardsDesc[num].style.display = "none";
-    document.querySelector(".popup-window").style.display = "none";
+    document.getElementById("decorations").classList.remove("fadeIn");
+    document.getElementById("decorations").classList.add("fadeOut");
+
+    document.querySelector(".page-header").classList.remove("fadeIn");
+    document.querySelector(".page-header").classList.add("fadeOut");
+
+    console.log(document.getElementsByTagName("footer")[0].classList);
+    document.querySelector(".about-me-card").classList.add("cardFlyOut");
+    // wait for animation to finish
+    await sleep(1100);
+    // redirect router
+    switch(num) {
+        case 0: window.location.href = "projects";
+                break;
+
+        case 1: window.location.href = "interests";
+                break;
+
+        case 2: window.location.href = "experiences";
+                break;
+
+        case 3: window.location.href = "awards";
+                break;
+
+        case 4: window.location.href = "affiliations";
+                break;
+
+        case 5: window.location.href = "goals";
+                break;
+    }
+
 }
 
 // auto scroll to top on refresh
@@ -41,17 +62,25 @@ for (let i = 0; i < cards.length; i++)
     cardsAnimated.push(false);
 
 for (let i = 0; i < cards.length; i++) {
-    window.addEventListener("scroll", function() {
     if (isInViewport(cards[i]) && !cardsAnimated[i]) {
         cardsAnimated[i] = true;
         cards[i].classList.add("cardFlyIn");
     }
+}
+
+for (let i = 0; i < cards.length; i++) {
+    window.addEventListener("scroll", function() {
+        if (isInViewport(cards[i]) && !cardsAnimated[i]) {
+            cardsAnimated[i] = true;
+            cards[i].classList.add("cardFlyIn");
+        }
     });
 }
 
 function isInViewport(element) {
     var rect = element.getBoundingClientRect();
     var html = document.documentElement;
+
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
