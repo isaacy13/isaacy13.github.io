@@ -11,8 +11,7 @@
     background-image: url("images/IMG_0220.JPG");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top center;
-    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
