@@ -1,8 +1,11 @@
 import './Awards.css';
+import awardsImage from './images/IMG_0220.JPG';
+
 function Awards() {
     return (
       <div className="awards">
         <div className="welcome-container">
+          <img src={ awardsImage } alt="Award ceremony"></img>
           <div className="welcome-title">
             <div>
               <button className="backButton" onClick={ () => window.location.href="https://isaacy13.github.io/#/" }></button>
