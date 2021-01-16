@@ -3,12 +3,17 @@
     animation-duration: 1s;
 }
 
+.welcome-container {
+    height: 100%;
+}
+
 .awards .welcome-container {
     background-image: url("images/IMG_0220.JPG");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
+    overflow: hidden;
 }
 
 .awards .welcome-title {
