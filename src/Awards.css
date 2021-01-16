@@ -4,12 +4,14 @@
 }
 
 .awards .welcome-container {
+    position: relative;
     background-image: url("images/IMG_0220.JPG");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
-
-    height: 100vh;
+    background-position: 47%;
+    background-size: cover !important;
+    
+    width: 100%;
 }
 
 .awards .welcome-title {
