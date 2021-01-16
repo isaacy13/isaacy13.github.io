@@ -3,16 +3,13 @@
     animation-duration: 1s;
 }
 
-.welcome-container {
-    height: 100vh;
-}
-
 .awards .welcome-container {
     background-image: url("images/IMG_0220.JPG");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    overflow: hidden;
+
+    height: 100vh;
 }
 
 .awards .welcome-title {
@@ -110,9 +107,9 @@
         display: block;
     }
 
-    .awards .welcome-container {
+    /* .awards .welcome-container {
         background-image: url("images/IMG_0220_2.png");
-    }
+    } */
 }
 
 @media only screen and (max-width: 540px) {
