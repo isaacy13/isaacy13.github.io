@@ -1,0 +1,48 @@
+.affiliations {
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.affiliations .welcome-title {
+    background: rgba(0, 0, 0, .85);
+    width: 100%;
+    height: min-content;
+    padding: 10px;
+    top: 0;
+    position: relative;
+}
+
+.affiliations-container {
+    display: block;
+}
+
+.affiliations .grid {
+    width: 100%;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+}
+
+.affil-card {
+    border-radius: 10px;
+    background: white;
+    color: black;
+    height:max-content;
+}
+
+.affil-card header {
+    font-size: 35px;
+    padding: 15px;
+    border-bottom: 1px rgba(0, 0, 0, .3) solid;
+}
+
+.affil-card .desc {
+    background: rgba(0,0,0, .05);
+    font-size: 20px;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .affiliations .span-6 {
+        grid-column: span 12;
+    }
+}
