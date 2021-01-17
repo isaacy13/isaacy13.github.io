@@ -1,6 +1,7 @@
 // avoids breaking website... (some event listeners & stuff doesn't work if you don't reload)
 window.onhashchange = function(event) {
     location.reload();
+    window.scrollTo(0, 0);
 }
 
 function sleep(ms) {

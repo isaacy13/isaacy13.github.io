@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/isaacy13.github.io/static/css/main.f8aa4bcf.chunk.css",
-    "main.js": "/isaacy13.github.io/static/js/main.ce5b4b1c.chunk.js",
-    "main.js.map": "/isaacy13.github.io/static/js/main.ce5b4b1c.chunk.js.map",
-    "runtime-main.js": "/isaacy13.github.io/static/js/runtime-main.0e429a20.js",
-    "runtime-main.js.map": "/isaacy13.github.io/static/js/runtime-main.0e429a20.js.map",
-    "static/js/2.451bc1ce.chunk.js": "/isaacy13.github.io/static/js/2.451bc1ce.chunk.js",
-    "static/js/2.451bc1ce.chunk.js.map": "/isaacy13.github.io/static/js/2.451bc1ce.chunk.js.map",
-    "static/js/3.842a1e68.chunk.js": "/isaacy13.github.io/static/js/3.842a1e68.chunk.js",
-    "static/js/3.842a1e68.chunk.js.map": "/isaacy13.github.io/static/js/3.842a1e68.chunk.js.map",
+    "main.css": "/isaacy13.github.io/static/css/main.feebd4ee.chunk.css",
+    "main.js": "/isaacy13.github.io/static/js/main.6f20b12a.chunk.js",
+    "main.js.map": "/isaacy13.github.io/static/js/main.6f20b12a.chunk.js.map",
+    "runtime-main.js": "/isaacy13.github.io/static/js/runtime-main.cc6fcc46.js",
+    "runtime-main.js.map": "/isaacy13.github.io/static/js/runtime-main.cc6fcc46.js.map",
+    "static/js/2.58a5e50d.chunk.js": "/isaacy13.github.io/static/js/2.58a5e50d.chunk.js",
+    "static/js/2.58a5e50d.chunk.js.map": "/isaacy13.github.io/static/js/2.58a5e50d.chunk.js.map",
+    "static/js/3.4694cc6a.chunk.js": "/isaacy13.github.io/static/js/3.4694cc6a.chunk.js",
+    "static/js/3.4694cc6a.chunk.js.map": "/isaacy13.github.io/static/js/3.4694cc6a.chunk.js.map",
     "index.html": "/isaacy13.github.io/index.html",
-    "static/css/main.f8aa4bcf.chunk.css.map": "/isaacy13.github.io/static/css/main.f8aa4bcf.chunk.css.map",
-    "static/js/2.451bc1ce.chunk.js.LICENSE.txt": "/isaacy13.github.io/static/js/2.451bc1ce.chunk.js.LICENSE.txt",
+    "static/css/main.feebd4ee.chunk.css.map": "/isaacy13.github.io/static/css/main.feebd4ee.chunk.css.map",
+    "static/js/2.58a5e50d.chunk.js.LICENSE.txt": "/isaacy13.github.io/static/js/2.58a5e50d.chunk.js.LICENSE.txt",
     "static/media/IMG_0220.9ae3a6e3.JPG": "/isaacy13.github.io/static/media/IMG_0220.9ae3a6e3.JPG",
     "static/media/Awards.css": "/isaacy13.github.io/static/media/back_button.e99c1fb2.png",
     "static/media/App.css": "/isaacy13.github.io/static/media/stars.90c266f7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e429a20.js",
-    "static/js/2.451bc1ce.chunk.js",
-    "static/css/main.f8aa4bcf.chunk.css",
-    "static/js/main.ce5b4b1c.chunk.js"
+    "static/js/runtime-main.cc6fcc46.js",
+    "static/js/2.58a5e50d.chunk.js",
+    "static/css/main.feebd4ee.chunk.css",
+    "static/js/main.6f20b12a.chunk.js"
   ]
 }
