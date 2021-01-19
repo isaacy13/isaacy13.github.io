@@ -3,6 +3,10 @@
     animation-duration: 1s;
 }
 
+.welcome-container {
+    background: rgba(255, 255, 255, 1);
+}
+
 .affiliations .welcome-title {
     background: rgba(0, 0, 0, .85);
     width: 100%;
@@ -14,34 +18,131 @@
 
 .affiliations-container {
     display: block;
+    border-top: 1px solid rgba(255, 255, 255, .4);
 }
 
 .affiliations .grid {
     width: 100%;
     grid-row-gap: 40px;
     grid-column-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .affil-card {
-    border-radius: 10px;
+    border-radius: 2px;
     background: white;
     color: black;
-    height:max-content;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
 }
 
 .affil-card header {
     font-size: 35px;
     padding: 15px;
+    background: rgba(0,0,0, .25);
     border-bottom: 1px rgba(0, 0, 0, .3) solid;
 }
 
 .affil-card .desc {
-    background: rgba(0,0,0, .05);
     font-size: 20px;
     padding: 15px;
 }
 
-@media only screen and (max-width: 1500px) {
+.aggie-coding-club-card:hover, .howdy-hack-card:hover, .datathon-card:hover, .honors-card:hover, .fbhs-card:hover, .bsa-card:hover {
+    border-top-style: hidden;
+}
+
+.acc-hover, .hh-hover, .datathon-hover, .honors-hover, .fbhs-hover, .bsa-hover {
+    display: none;
+    height: 100%;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.acc-hover {
+    box-shadow: 1px 1px #0184CF;
+}
+
+.acc-hover:hover {
+    box-shadow: 10px 10px #0184CF;
+}
+
+.hh-hover {
+    box-shadow: 1px 1px rgba(242,123,147, 1);
+}
+
+.hh-hover:hover {
+    box-shadow: 10px 10px rgba(242,123,147, 1);
+}
+
+.datathon-hover {
+    box-shadow: 1px 1px #00BFAA;
+}
+
+.datathon-hover:hover {
+    box-shadow: 10px 10px #00BFAA;
+}
+
+.honors-hover {
+    box-shadow: 1px 1px #5D0020;
+}
+
+.honors-hover:hover {
+    box-shadow: 10px 10px #5D0020;
+}
+
+.fbhs-hover {
+    box-shadow: 1px 1px #580122;
+}
+
+.fbhs-hover:hover {
+    box-shadow: 10px 10px #580122;
+}
+
+.bsa-hover {
+    box-shadow: 1px 1px #E71F3D;
+}
+
+.bsa-hover:hover {
+    box-shadow: 10px 10px #E71F3D;
+}
+
+.acc-hover:hover, .hh-hover:hover, .datathon-hover:hover, .honors-hover:hover, .fbhs-hover:hover, .bsa-hover:hover {
+    border-radius: 2px;
+    background: rgba(0, 0, 0, .05);
+    cursor: pointer;
+}
+
+.acc-logo, .hh-logo, .datathon-logo, .honors-logo, .fbhs-logo, .bsa-logo {
+    height: 100%;
+    width: 90%;
+}
+
+.affiliations-heading {
+    letter-spacing: .8px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.affiliations-heading h1 {
+    font-size: 55px;
+    padding: 4%;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+.affiliations-heading p {
+    line-height: 50px;;
+    margin: auto;
+    font-size: 20px;
+    padding: 4%;
+    font-weight: 400;
+    max-width: 780px;
+}
+
+@media only screen and (max-width: 750px) {
     .affiliations .span-6 {
         grid-column: span 12;
     }
