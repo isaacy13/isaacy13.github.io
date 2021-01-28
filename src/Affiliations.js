@@ -1,9 +1,11 @@
 import './Affiliations.css';
+import affiliationsImage from './images/esp.JPG';
 
 function Affiliations() {
     return (
         <div className="affiliations">
           <div className="welcome-container">
+            <img src={ affiliationsImage } alt="Eagle Scout Project"></img>
             <div className="welcome-title">
               <div>
                 <button className="backButton" onClick={ () => window.location.href="https://isaacy13.github.io/#/" }></button>
@@ -39,7 +41,7 @@ function Affiliations() {
                   </div>
                 </section>
 
-                <section className="span-6 affil-card howdy-hack-card">
+                <section className="span-6 affil-card howdy-hack-card card">
                   <div className="hh-info">
                     <header>Texas A&M Howdy Hack</header>
                     <div className="desc">
@@ -54,7 +56,7 @@ function Affiliations() {
                   </div>
                 </section>
 
-                <section className="span-6 affil-card datathon-card">
+                <section className="span-6 affil-card datathon-card card">
                   <div className="datathon-info">
                     <header>Texas A&M Datathon</header>
                     <div className="desc">
@@ -69,7 +71,7 @@ function Affiliations() {
                   </div>
                 </section>
 
-                <section className="span-6 affil-card honors-card">
+                <section className="span-6 affil-card honors-card card">
                   <div className="honors-info">
                     <header>Texas A&M Engineering Honors</header>
                     <div className="desc">
@@ -84,7 +86,7 @@ function Affiliations() {
                   </div>
                 </section>
 
-                <section className="span-6 affil-card fbhs-card">
+                <section className="span-6 affil-card fbhs-card card">
                   <div className="fbhs-info">
                     <header>Flour Bluff High School Basketball</header>
                     <div className="desc">
@@ -98,12 +100,12 @@ function Affiliations() {
                   </div>
                 </section>
 
-                <section className="span-6 affil-card bsa-card">
+                <section className="span-6 affil-card bsa-card card">
                   <div className="bsa-info">
                     <header>Boy Scouts of America</header>
                     <div className="desc">
                       <p>'08 - '20. Pack 949 & Troop 949. Involvement with scouting from kindergarten
-                        to senior year. Achieved rank of Eagle Scout after project for alum elementary
+                        to senior year. Achieved rank of Eagle Scout after project for alma mater elementary
                         school.
                       </p>
                     </div>

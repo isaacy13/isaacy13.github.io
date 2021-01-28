@@ -3,7 +3,7 @@
     animation-duration: 1s;
 }
 
-.welcome-container {
+.affiliations .welcome-container {
     background: rgba(255, 255, 255, 1);
 }
 
@@ -13,7 +13,7 @@
     height: min-content;
     padding: 10px;
     top: 0;
-    position: relative;
+    position: absolute;
 }
 
 .affiliations-container {
@@ -41,7 +41,7 @@
 .affil-card header {
     font-size: 35px;
     padding: 15px;
-    background: rgba(0,0,0, .25);
+    background: rgba(0,0,0, .03);
     border-bottom: 1px rgba(0, 0, 0, .3) solid;
 }
 
@@ -145,5 +145,47 @@
 @media only screen and (max-width: 750px) {
     .affiliations .span-6 {
         grid-column: span 12;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .affiliations .welcome-container h1 {
+        font-size: 35px;
+    }   
+
+    .affiliations-heading h1 {
+        font-size: 35px;
+    }
+
+    .affiliations-heading p {
+        font-size: 17px;
+    }
+
+    .affil-card header {
+        font-size: 25px;
+    }
+
+    .affil-card .desc {
+        font-size: 15px;
+    }
+
+    .affiliations .grid {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .affil-card {
+        min-width: unset;
+        width: 90vw;
+        opacity: .5;
+    }
+    
+    .affiliations .desc p {
+        line-height: normal;
+    }
+
+    .affiliations .backButton {
+        width: 45px;
+        height: 45px;
     }
 }

@@ -109,22 +109,22 @@
 }
 
 @media only screen and (max-width: 750px) {
-    .welcome-container img {
+    .awards .welcome-container img {
         content:url("images/IMG_0220_2.png");
     }
 }
 
 @media only screen and (max-width: 540px) {
-    .welcome-title {
+    .awards .welcome-title {
         padding: 0;
         padding-top: 5px;
         padding-bottom: 5px;
     }
     
-    .welcome-container h1 {
+    .awards .welcome-container h1 {
         font-size: 45px;
     }
-    .awards-heading h1 {
+    .awards .awards-heading h1 {
         padding: 5px;
         font-size: 40px;
     }
@@ -144,7 +144,7 @@
 }
 
 @media only screen and (max-width: 300px) {
-    .welcome-container h1 {
+    .awards .welcome-container h1 {
         font-size: 35px;
     }
 

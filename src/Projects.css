@@ -1,0 +1,129 @@
+.projects {
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.projects .welcome-container {
+    background: rgba(255, 255, 255, 0);
+}
+
+.projects .welcome-title {
+    background: rgba(0, 0, 0, .85);
+    width: 100%;
+    height: min-content;
+    padding: 10px;
+    top: 0;
+    position: absolute;
+}
+
+.projects-container {
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, .4);
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.projects-heading {
+    letter-spacing: .8px;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.projects-heading h1 {
+    font-size: 55px;
+    padding: 4%;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+.projects-heading p {
+    line-height: 50px;;
+    margin: auto;
+    font-size: 20px;
+    padding: 4%;
+    font-weight: 400;
+    max-width: 820px;
+}
+
+.study-buddy-card, .ocr-app-card, .seam-carving-card, .string-calc-card {
+    border-radius: 20px;
+    min-height: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+.study-buddy-card {
+    background: rgb(0,156,130);
+    background: radial-gradient(circle, rgba(0,156,130,1) 0%, rgba(0,89,58,1) 100%);
+}
+
+.ocr-app-card {
+    background: rgb(0,82,156);
+    background: radial-gradient(circle, rgba(0,82,156,1) 0%, rgba(47,50,142,1) 100%);
+}
+
+.seam-carving-card {
+    background: rgb(115,1,156);
+    background: radial-gradient(circle, rgba(115,1,156,1) 0%, rgba(67,0,161,1) 100%);
+}
+
+.string-calc-card {
+    background: rgb(255,187,97);
+    background: radial-gradient(circle, rgba(255,187,97,1) 0%, rgba(149,96,26,1) 100%);
+}
+
+.study-buddy-card header, .ocr-app-card header, .seam-carving-card header, .string-calc-card header {
+    font-size: 35px;
+    padding: 15px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.study-buddy-card .desc, .ocr-app-card .desc, .seam-carving-card .desc, .string-calc-card .desc {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.desc p {
+    line-height: 35px;
+    letter-spacing: 1.25px;
+}
+
+@media only screen and (max-width: 550px) {
+    .projects .welcome-container h1 {
+        font-size: 35px;
+    }   
+
+    .projects-heading h1 {
+        font-size: 35px;
+    }
+
+    .projects-heading p {
+        font-size: 17px;
+    }
+
+    .card header {
+        font-size: 25px;
+    }
+
+    .card .desc {
+        font-size: 15px;
+    }
+
+    .projects .grid {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .card {
+        min-width: unset;
+        width: 90vw;
+    }
+    
+    .projects .desc p {
+        line-height: normal;
+    }
+
+    .projects .backButton {
+        width: 45px;
+        height: 45px;
+    }
+}
