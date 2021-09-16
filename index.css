@@ -1,0 +1,208 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.animateBody {
+    background: linear-gradient(63deg, #000000, #c9c9c9);
+    background-size: 1000% 1000%;
+    -webkit-animation: GradientAnimation 13s ease infinite;
+    -moz-animation: GradientAnimation 13s ease infinite;
+    animation: GradientAnimation 13s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
+@-moz-keyframes GradientAnimation {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
+@keyframes GradientAnimation {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
+
+nav {
+    font-family:monospace;
+    font-weight: 500; 
+    letter-spacing: 1px;
+}
+
+#page_nav {
+    margin-right:20px;
+    align-self: center;
+}
+
+#page_nav > a > h4 {
+    display: inline;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.carousel-text {
+    color: white;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.carousel-text.large {
+    font-size: 72px;
+}
+
+.carousel-text.small {
+    font-family:monospace;
+    font-size: 24px;
+}
+
+#contact-me {
+    display: flex;
+    justify-content:space-between;
+}
+
+#contact-me > a {
+    text-decoration: none; 
+    white-space:nowrap;
+}
+
+#contact-me > a > img {
+    filter: invert(1);
+    animation: shrink 0.6s forwards;
+}
+
+#contact-me > a > img:hover {
+    animation: enlargen 0.6s forwards;
+}
+
+@keyframes enlargen {
+    from {
+      width: 50px;
+      height: 50px;
+    }
+  
+    to {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@keyframes shrink {
+    from {
+      width: 60px;
+      height: 60px;
+    }
+  
+    to {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.carousel-front {
+    padding-left: 100px;
+}
+
+.carousel-content > div {
+    padding-right: 5%;
+}
+
+#gh-logo:hover{
+    filter: invert(1);
+    filter: invert(18%) sepia(92%) saturate(4581%) hue-rotate(99deg) brightness(101%) contrast(106%);
+} 
+
+#li-logo:hover{
+    filter: invert(1);
+    filter: invert(36%) sepia(95%) saturate(5404%) hue-rotate(184deg) brightness(93%) contrast(101%);  
+} 
+
+#gmail-logo:hover {
+    filter: invert(1);
+    filter: invert(33%) sepia(28%) saturate(6208%) hue-rotate(345deg) brightness(98%) contrast(87%);    
+}
+
+.carousel-content {
+    align-items: center; 
+    display: flex; 
+    height: 75vh;
+    justify-content: center; 
+    margin: 3%;
+}
+
+a.navbar-brand > h4:hover, a.navbar-brand > h5:hover  {
+    text-shadow: 0 0 5px white;
+}
+
+.carousel-inner {
+    margin: auto;
+}
+
+#mobile-version {
+    display: none;
+}
+
+#isaac-portrait {
+    border-radius: 25%; 
+    height:431px;
+}
+
+@media only screen 
+and (max-width : 950px) {
+    #carouselMain {
+        display: none;
+    }
+
+    #mobile-version {
+        display: contents;
+    }
+
+    #isaac-portrait {
+        border-radius: 0; 
+        height:350px;
+    }
+
+    #boyscouts_picture {
+        height: 400px;
+    }
+
+    .container-fluid {
+        display:inline-block;
+    }
+    
+    #page_nav {
+        margin: 0;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        text-align: center;
+    }
+
+    #mobile-container {
+        margin: 25px;
+    }
+
+    .container-fluid {
+        display:inline-grid !important;
+        align-items: center;
+    }
+    .navbar > .container-fluid {
+        margin-left: 20%;
+        justify-items: left;
+        text-align: left;
+    }
+
+    .navbar-brand {
+        padding-right: 100px;
+    }
+}
+
+@media only screen 
+and (max-width : 1050px) {  
+    .large {
+        font-size:64px !important;
+    }
+}

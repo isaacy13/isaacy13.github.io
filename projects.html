@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet">
+
+    <link href="projects.css" rel="stylesheet">
+    <script src="projects.js"></script>
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <title>Projects</title>
+</head>
+<body onload="loadAnimation()">
+  <nav class="navbar navbar-dark" style="height: 10vh; display:inline;">
+    <div class="container-fluid" style="align-items: flex-start;">
+        <a class="navbar-brand" href="index.html">
+            <img src="resources/tamu_logo_transparent_100x100.png" width="50" height="50"/>
+            <h5 style="display:inline;" id="HomeLink">Homepage</h5>
+        </a>
+        <div id="page_nav">
+            <a class="navbar-brand" href="projects.html" >
+                <h4>Projects</h4>
+            </a>
+
+            <a class="navbar-brand" href="qualifications.html" >
+                <h4>Qualifications</h4>
+            </a>
+
+            <a class="navbar-brand" href="service.html" >
+                <h4>Service</h4>
+            </a>
+            
+            <div class="dropdown show" style="display:inline-block">
+              <a class="navbar-brand dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+               style="display:inline; font-size: 24px; vertical-align: middle;">
+                Settings
+              </a>
+            
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink" style="right:0; left:auto;">
+                <a class="dropdown-item" id="animationText" onclick="changeAnimationSetting()">Enable Animations</a>
+              </div>
+            </div>
+        </div>
+    </div>
+  </nav>
+    
+    <div style="margin:20px;">
+      <div style="width:80%; margin: auto;">
+        <h1 class="display-4" style="text-align: center;">Projects I Enjoyed Making</h1>
+        <p class="lead">From looking through loads of documentation to learning how to utilize
+          technologies I'd never been exposed to, here are my favorite learning experiences.
+          Try, fail, repeat until you succeed.</p>
+      </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <img src="resources/TilesLogo.png" width="45px" height="45px" style="display:inline"/>
+                  <h5 class="card-title" style="display:inline; margin-left: 5px; vertical-align: middle;">Tiles</h5>
+                  <p class="card-text date"><i>Summer 2021 - ONGOING</i> | .NET, C#, XAML</p>
+                  <p class="card-text less">Tiles is a project that I created because there were no free schedule apps
+                    that looked good and didn't freeze up continuously.
+                  <p class="card-text less">I want to eventually add some flair (ie: background animations when the app is idling).
+                    However, within the timeframe I had to develop it (cut very short due to summer classes), I was mostly working on
+                    the front-end / database. Although the front-end is very far from perfect, it's functional enough to start working
+                    on connecting it to the backend.
+                  </p>
+                  <ul class="card-text" id="TilesMore"> 
+                    Future Plans:
+                    <li>Currently working on the login splash page as well as OAUTH permissions.</li>
+                    <li>Add decorative animations</li>
+                    <li>Hook everything up to Firebase</li>
+                    <li>Troubleshoot potential memory leaks</li>
+                    <li>Canvas integration...?</li>
+                    <li>Spotify integration...?</li>
+                    <li>Deploy on Windows Store</li>
+                  </ul>
+
+                    <p onclick="showMore('TilesMore', 'btnTilesReadMore')" class="btnReadMore" id="btnTilesReadMore">Read More</p>
+
+                    <div>
+                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" 
+                      aria-expanded="false" aria-controls="collapseExample">
+                        Screenshots
+                      </a>
+                      <a href="https://github.com/isaacy13/Metis-Tiles" class="btn btn-primary">
+                        GitHub
+                      </a>
+                    </div>
+
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="resources/tiles_preview_1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="resources/tiles_preview_2.png" alt="Second slide">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Simple HACK Computer</h5>
+                  <p class="card-text date"><i>Summer 2021</i> | HDL</p>
+                  <p class="card-text less">In my Computer Organization class, we created the simplest computer components
+                    from logic gates (using HDL) and used these components to build larger components like RAM. Eventually,
+                    we combined our simple CPU, RAM, and a pre-built ROM32K to create a simple HACK computer. 
+                  </p>
+                  <p class="card-text"> This experience of building from the ground up was valuable because it forced me to
+                    understand even the little details in how simple computers work. 
+                  </p>
+
+                  <p class="card-text" id="HACKMore">
+                    Additionally, it taught me valuable lessons for the software side of things (ie: applying cache management knowledge to make more efficient programs).
+                    Overall, this project was a super fun dive into simple computers and helped me understand a little more about
+                    how modern computers work.
+                  </p>
+
+                  <p onclick="showMore('HACKMore', 'btnHackReadMore')" class="btnReadMore" id="btnHackReadMore">Read More</p>
+
+                  <a href="https://github.com/isaacy13/HACK" class="btn btn-primary" >Github</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">AVL Tree Data Structure</h5>
+                  <p class="card-text date"><i>Spring 2021</i> | C++</p>
+                  <p class="card-text"> In my Data Structures & Algorithms class, this was the second most challenging
+                    project we faced (behind RB trees). From learning about the data structure to actually implementing the AVL tree, 
+                    it was a project that I spent a lot of time on.
+                  </p>
+                  <p class="card-text"> That being said, in retrospect, I am grateful for the project as it gave me a lot of confidence in
+                    working with data structures and can confidently say it played a role in the rest of the semester with all other data
+                    structures.
+                  </p>
+                  <a href="https://github.com/isaacy13/AVLTree" class="btn btn-primary" >Github</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Tesseract OCR App</h5>
+                  <p class="card-text date"><i>Fall 2020</i> | Java, XML</p>
+                  <p class="card-text"> This Android OCR App was a personal project I made for the sole purpose of learning how to tinker with
+                    OCR libraries and apply them in "real-world" scenarios. <i>Tesseract</i> was the name of the library I utilized and, for
+                     my purposes, it was completely fine.
+                  </p>
+                  <p class="card-text"> This project was a fun learning experience as it was my first "higher-level" technology that I had always
+                    heard about but never gotten to use myself. Additionally, it was really neat working with OCR since for the 
+                    <i>Study Buddy App</i> project, I applied for the front-end team.
+                  </p>
+                  <a href="https://github.com/isaacy13/Tesseract-App-Practice" class="btn btn-primary" >Github</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Study Buddy App</h5>
+                  <p class="card-text date"><i>Fall 2020</i> | Java, XML</p>
+                  <p class="card-text"> The Study Buddy App was the first project I worked on as a team (as a part of <i>Aggie Coding Club</i>).
+                    Originally, the idea had originated from a hackathon: notes that you take on paper should be easily transferred to a digital
+                    format and could potentially be automatically organized.
+                  </p>
+                  <p class="card-text"> I thought the idea was really cool, so I joined the sub-group as part of the front-end team. There, I
+                    helped developed the majority of the front-end and communicated with the project manager & OCR team, seeing what they needed.
+                    Overall, one of my favorites, as working with other like-minded people was really cool (especially during the pandemic).
+                  </p>
+                  <a href="https://github.com/aggie-coding-club/Study-Buddy" class="btn btn-primary" >Github</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Discord Photoroulette Bot</h5>
+                  <p class="card-text date"><i>Fall 2020</i> | Python, Discord API</p>
+                  <p class="card-text"> The Discord Photoroulette Bot was made for a Discord Bot competition in <i>Aggie Coding Club</i>. 
+                    The purpose of this bot was to have players send in their pictures from which the bot would randomly select from.
+                    Showing the rest of the server the selected picture, everyone would take turns guessing whose picture it was.
+                  </p>
+                  <p class="card-text"> Aside from being a neat party game, this project was a lot of fun because it was the first time
+                    I placed in a coding competition (ended up second place and got a cool keyboard). This project further increased my interest
+                    in code (as it was my freshman year where I hadn't declared a major). Overall a cool memory and quite possibly contributed
+                    to the reason I enjoy coding.
+                  </p>
+                  <a href="https://github.com/isaacy13/Capsher-Discord-Bot" class="btn btn-primary" >Github</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

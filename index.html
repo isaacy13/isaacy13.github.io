@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <title>Homepage</title>
+</head>
+<body onload="loadAnimation()">
+    <nav class="navbar navbar-dark" style="height: 10vh; display:inline;">
+        <div class="container-fluid" style="align-items: flex-start;">
+            <a class="navbar-brand" href="index.html">
+                <img src="resources/tamu_logo_transparent_100x100.png" width="50" height="50"/>
+                <h5 style="display:inline;" id="HomeLink">Homepage</h5>
+            </a>
+            <div id="page_nav">
+                <a class="navbar-brand" href="projects.html" >
+                    <h4>Projects</h4>
+                </a>
+
+                <a class="navbar-brand" href="qualifications.html" >
+                    <h4>Qualifications</h4>
+                </a>
+
+                <a class="navbar-brand" href="service.html" >
+                    <h4>Service</h4>
+                </a>
+                
+                <div class="dropdown show" style="display:inline-block">
+                  <a class="navbar-brand dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                   style="display:inline; font-size: 24px; vertical-align: middle;">
+                    Settings
+                  </a>
+                
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink" style="right:0; left:auto;">
+                    <a class="dropdown-item" id="animationText" onclick="changeAnimationSetting()">Enable Animations</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+      <div id="carouselMain" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="carousel-content">
+                  <img src="resources/isaac_cropped_transparent-min.png" alt="Portrait of Isaac Yeang" style="border-radius: 25%; height:431px"/>
+                  <div class="carousel-front">
+                    <h1 class="carousel-text large">Hey, I'm Isaac.</h1>
+                    <br>
+                    <h3 class="carousel-text small">Senior at Texas A&M 🎓</h3>
+                    <br>
+                    <h3 class="carousel-text small">Love full-stack web, .NET, and Android development 👨‍🔬</h3>
+                    <br>
+                    <h3 class="carousel-text small">Interested in and currently studying machine learning 👨‍💻</h3>
+                    <br>
+                    <h3 class="carousel-text small">Let's connect!</h3>
+                    <br><br>
+                    <div id="contact-me">
+                      <a href="https://www.linkedin.com/in/isaac-yeang/">
+                        <img id="li-logo" src="resources/linkedin.png" width="50px" height="50px" alt="Connect on LinkedIn">
+                      </a>
+                      <a href="https://www.github.com/isaacy13">
+                        <img id="gh-logo" src="resources/github.png" width="50px" height="50px" alt="Check out my GitHub">
+                      </a>
+                      <a href="mailto:isaacy13@tamu.edu">
+                        <img id="gmail-logo" src="resources/gmail.png" width="50px" height="50px" alt="Send me an email">
+                      </a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <div>
+                <h1 class="carousel-text large">Nice to meet you.</h1>
+                <br>
+                <h3 class="carousel-text small">Currently loving Aggieland 🏫</h3>
+                <br>
+                <h3 class="carousel-text small">Excited about exploring other cities 🌆</h3>
+                <br>
+                <h3 class="carousel-text small">Enjoy meeting other people 🤝</h3>
+                <br><br>
+              </div>
+              <div style="width: 40%; padding: 0;">
+                <img src="resources/aggieland-min.jpg" class="d-block w-100" alt="Picture of Isaac Yeang with AggieLand backdrop">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <div style="padding-right: 2%;">
+                <h1 class="carousel-text large">A little about myself</h1>
+                <br>
+                <h3 class="carousel-text small">Born and raised in Corpus Christi 🌊</h3>
+                <br>
+                <h3 class="carousel-text small">Flour Bluff High School (class of 2020) 👨‍🎓</h3>
+                <br>
+                <h3 class="carousel-text small">Hooped in high school & still play recreationally 🏀</h3>
+                <br><br>
+              </div>
+              <div style="width: 40%; padding: 0;">
+                <img src="resources/basketball.JPG" class="d-block w-100" alt="Picture of Isaac and his basketball team">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content">
+              <div style="padding-right: 5%;">
+                <h1 class="carousel-text large">A little (more) about me</h1>
+                <br>
+                <h3 class="carousel-text small">Always loved the outdoors & camping ⛺</h3>
+                <br>
+                <h3 class="carousel-text small">Also loved doing science & math competitions 🎮</h3>
+                <br>
+                <h3 class="carousel-text small">Been doing Boy Scouts since kindergarten 👶</h3>
+                <br><br>
+              </div>
+              <div style="width: 40%; padding: 0; max-width:300px;">
+                <img src="resources/boyscouts_cropped.jpg" class="d-block w-100" alt="Young picture of Isaac Yeang in Cub Scouts uniform">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-version">
+        <div id="mobile-container">
+          <div>
+              <div class="card1">
+                  <img src="resources/isaac_cropped_transparent-min.png" alt="Portrait of Isaac Yeang" id="isaac-portrait"/>
+                  <div>
+                    <h1 class="large">Hey, I'm Isaac.</h1>
+                    <br>
+                    <h3>Senior at Texas A&M 🎓</h3>
+                    <br>
+                    <h3>Love full-stack web, .NET, and Android development 👨‍🔬</h3>
+                    <br>
+                    <h3>Interested in and currently studying machine learning 👨‍💻</h3>
+                    <br>
+                    <h3>Let's connect!</h3>
+                    <br><br>
+                    <div id="contact-me">
+                      <a href="https://www.linkedin.com/in/isaac-yeang/">
+                        <img id="li-logo" src="resources/linkedin.png" width="50px" height="50px" alt="Connect on LinkedIn">
+                      </a>
+                      <a href="https://www.github.com/isaacy13">
+                        <img id="gh-logo" src="resources/github.png" width="50px" height="50px" alt="Check out my GitHub">
+                      </a>
+                      <a href="mailto:isaacy13@tamu.edu">
+                        <img id="gmail-logo" src="resources/gmail.png" width="50px" height="50px" alt="Send me an email">
+                      </a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+          <hr>
+
+          <div>
+            <div>
+              <div class="card2">
+                <h1 class="large">Nice to meet you.</h1>
+                <br>
+                <h3>Currently loving Aggieland 🏫</h3>
+                <br>
+                <h3>Excited about exploring other cities 🌆</h3>
+                <br>
+                <h3>Enjoy meeting other people 🤝</h3>
+                <br>
+                <br><br>
+              </div>
+              <div>
+                <img src="resources/aggieland-min.jpg" class="d-block w-100" alt="Picture of Isaac Yeang with AggieLand backdrop">
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div>
+            <div>
+              <div class="card3">
+                <h1 class="large">A little about myself</h1>
+                <br>
+                <h3>Born and raised in Corpus Christi 🌊</h3>
+                <br>
+                <h3>Flour Bluff High School (class of 2020) 👨‍🎓</h3>
+                <br>
+                <h3>Hooped in high school & still play recreationally 🏀</h3>
+                <br><br>
+              </div>
+              <div>
+                <img src="resources/basketball.JPG" class="d-block w-100" alt="Picture of Isaac and his basketball team">
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div>
+            <div>
+              <div class="card4">
+                <h1 class="large">A little (more) about me</h1>
+                <br>
+                <h3>Always loved the outdoors & camping ⛺</h3>
+                <br>
+                <h3>Also loved doing science & math competitions 🎮</h3>
+                <br>
+                <h3>Been doing Boy Scouts since kindergarten 👶</h3>
+                <br><br>
+              </div>
+              <div style="text-align: center;">
+                <img src="resources/boyscouts_cropped.jpg" id="boyscouts_picture" alt="Young picture of Isaac Yeang in Cub Scouts uniform">
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+      </div>
+</body>
+</html>

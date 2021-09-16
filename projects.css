@@ -1,0 +1,33 @@
+.card-body {
+    color: black;
+}
+
+.card {
+    height: 100%;
+}
+
+.row>* {
+    padding: calc(var(--bs-gutter-x) * .5);
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.date {
+    font-weight: 600;
+}
+
+#TilesMore, #HACKMore {
+    display: none;
+}
+
+#TilesMore > li {
+    margin-left: 20px;
+}
+
+.btnReadMore {
+    color: blue;
+    text-decoration: underline;
+    cursor:pointer;
+}
