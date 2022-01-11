@@ -1,0 +1,90 @@
+#project-selector, #project-list, #project-content {
+    height: 90vh;
+}
+
+#project-header {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+#project-header > h1 {
+    padding: 20px;
+}
+
+#Projects, #project-header {
+    margin-bottom: 10px;
+}
+
+#project-selector {
+    display: flex;
+    flex-flow: column;
+
+    margin-right: 20px;
+}
+
+#project-content {
+    display: flex;
+    width: 60%;
+}
+
+#project-list {
+    margin-right: 20px;
+    width: 40%;
+}
+
+#Projects > div {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}
+
+#Projects #project-selector-content img {
+    height: 80px;
+    width: 80px;
+}
+
+#project-selector-content {
+    padding: 20px;
+    height: 90%;
+}
+
+.selected {
+    border: white solid;
+    border-width: 2px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #Projects > .section {
+        flex-direction: column;
+    }
+
+    #project-selector {
+        height: fit-content;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    #Apps, #Linux, #ML {
+        margin: 0;
+    }
+
+    #project-header {
+        margin: 0;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        background: #4e4e4e;
+    }
+
+    #project-selector-content {
+        flex-direction: row;
+    }
+
+    #Linux {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

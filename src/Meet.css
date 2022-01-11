@@ -1,0 +1,42 @@
+#Meet .section {
+    height: 50%;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 750px) {
+    #Meet .section {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #Meet > .section:nth-child(even) {
+        flex-direction: column;
+    }
+
+    #Meet > .section:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    #Meet > .section > div {
+        padding: 0 !important;
+        padding-bottom: 20px !important;
+        width: 60%;
+    }
+
+    #Meet > .section > div > img {
+        width: 100%;
+    }
+
+    #Meet > div > div {
+        text-align: center;
+    }
+
+    #Meet {
+        margin-top: 2.5% !important;
+        margin-bottom: 2.5% !important;
+    }
+}

@@ -1,0 +1,34 @@
+#linkedin-logo:hover {
+    filter: invert(25%) sepia(72%) saturate(4456%) hue-rotate(184deg) brightness(92%) contrast(89%);
+}
+
+#github-logo:hover {
+    filter: invert(63%) sepia(64%) saturate(433%) hue-rotate(57deg) brightness(96%) contrast(90%);
+}
+
+#gmail-logo:hover {
+    filter: invert(36%) sepia(24%) saturate(7123%) hue-rotate(345deg) brightness(90%) contrast(81%);
+}
+
+@media only screen and (max-width: 1000px) {
+    #introduction-desc-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #Introduction {
+        flex-direction: column;
+    }
+
+    #selfie-container {
+        margin: 20px;
+    }
+
+    #introduction-desc-container {
+        text-align: center;
+    }
+}
+

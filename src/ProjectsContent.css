@@ -1,0 +1,78 @@
+.project-image {
+    width: 100%;
+    height: 30%;
+
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+    min-height: fit-content;
+}   
+
+.purple-blue {
+    background: rgb(48,27,69);
+    background: linear-gradient(45deg, rgba(48,27,69,1) 0%, rgba(30,74,113,1) 100%);
+}
+
+.purple-red {
+    background: rgb(48,27,69);
+    background: linear-gradient(45deg, rgba(48,27,69,1) 0%, rgba(136,31,63,1) 100%);
+}
+
+.purple-teal {
+    background: rgb(48,27,69);
+    background: linear-gradient(45deg, rgba(48,27,69,1) 0%, rgba(31,136,101,1) 100%);
+}
+
+.purple-pink {
+    background: rgb(48,27,69);
+    background: linear-gradient(45deg, rgba(48,27,69,1) 0%, rgba(136,31,123,1) 100%);
+}
+
+.purple-black {
+    background: rgb(48,27,69);
+    background: linear-gradient(45deg, rgba(48,27,69,1) 11%, rgba(0,0,0,1) 100%);
+}
+
+.project-image > img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+}
+
+.project-description {
+    background: #2D2D2D;
+
+    width: 100%;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    /* font-size: 4.2vw !important; */
+}
+
+#Projects .fs-5 {
+    margin-bottom: 0.5rem !important;
+}
+
+.skill {
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-flex;
+}
+
+.skill > h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.private {
+    color: red;
+}

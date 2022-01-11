@@ -1,0 +1,23 @@
+#Service > .content {
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    padding: 30px 40px 30px 40px;
+}
+
+#Service .bold {
+    margin: 0;
+}
+
+#Service img {
+    padding: 20px 0px 20px 0px;
+}
+
+#Service .display-6 {
+    color: rgb(180, 180, 180);
+    font-size: 28px;
+}
+
+.display-4, .display-6 {
+    font-weight: 400;
+}

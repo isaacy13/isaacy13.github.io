@@ -1,0 +1,35 @@
+#About {
+    background: #500000;
+
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+#About h2 {
+    color: #BDBDBD;
+}
+
+#About > div > img {
+    width: 10em;
+    height: 10em;
+
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+    #About > img {
+        margin-right: 0;
+    }
+
+    #About > div {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #About > div > img {
+        height: 7em;
+        width: 7em;
+        margin: 0;
+    }
+}

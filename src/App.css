@@ -1,0 +1,155 @@
+#root {
+  min-width: 750px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.fs-1, .fs-2, .fs-3, .fs-4, .fs-5, .fs-6 {
+  font-weight: 100;
+}
+
+.fs-4 {
+  padding: 10px 0px 10px 0px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.horizontal-icons {
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: space-around;
+
+  background: #2D2D2D;
+  border-radius: 20px;
+
+  padding: 15px;
+}
+
+.content {
+  background: #4E4E4E;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+#About, #Introduction, #Meet, #Projects, #Qualifications, #Service {
+  min-height: 100vh;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #About, #Introduction, #Meet, #Projects, #Qualifications, #Service {
+    padding: 25px;
+  }
+}
+
+.vert-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon {
+  width: 95%;
+  margin: auto;
+
+  height: fit-content;
+  background: #2D2D2D;
+  border-radius: 15px;
+  padding: 20px;
+
+  flex-flow: column;
+  flex: 1;
+
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icon > h2 {
+  font-size: 26px;
+}
+
+.selector {
+  cursor: pointer;
+}
+
+.selector:hover {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+}
+
+.selector:active {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 1);
+}
+
+.scroll {
+  overflow-y: auto;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+.scroll::-webkit-scrollbar-track {
+  background: #4E4E4E;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background: rgb(45,45,45);
+
+  border-radius: 20px;
+}
+.scroll:hover::-webkit-scrollbar-thumb {
+  visibility:visible;
+}
