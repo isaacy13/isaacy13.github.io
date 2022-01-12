@@ -153,3 +153,10 @@ h1, h2 {
 .scroll:hover::-webkit-scrollbar-thumb {
   visibility:visible;
 }
+
+#LoadingPage {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #500000;
+}
