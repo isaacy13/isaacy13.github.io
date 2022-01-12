@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import About from './About';
@@ -81,7 +80,7 @@ class App extends react.Component {
         <svg>
           <circle cx="70" cy="70" r="70"></circle>
         </svg>
-        <text x="50%" y="50%" text-anchor="middle" stroke="#51c5cf" stroke-width="2px" dy=".3em" style={{ position: "absolute" }} className="fs-6">Loading</text>
+        <h1 x="50%" y="50%" textAnchor="middle" stroke="#51c5cf" strokeWidth="2px" dy=".3em" style={{ position: "absolute" }} className="fs-6">Loading</h1>
       </div>
     );
   }
