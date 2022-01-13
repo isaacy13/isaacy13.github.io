@@ -10,6 +10,14 @@
     filter: invert(36%) sepia(24%) saturate(7123%) hue-rotate(345deg) brightness(90%) contrast(81%);
 }
 
+#selfie-container {
+    width: 60%;
+}
+
+#introduction-desc-container {
+    width: 70%;
+}
+
 @media only screen and (max-width: 1000px) {
     #introduction-desc-container {
         display: flex;

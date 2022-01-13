@@ -3,10 +3,10 @@ import './Introduction.css';
 function Introduction() {
   return (
     <div id="Introduction" className="section">
-      <div style={{ width: "60%" }} className="section" id="selfie-container">
+      <div style={{ opacity: 0 }} className="section" id="selfie-container">
         <img src="resources/images/selfie.svg"/>
       </div>
-      <div style={{width: "70%"}} id="introduction-desc-container">
+      <div id="introduction-desc-container" style={{ opacity: 0 }}>
         <div style={{width: "80%"}}>
           <h1 className="display-4 bold">Hey, I'm Isaac.</h1>
           <div className="content">

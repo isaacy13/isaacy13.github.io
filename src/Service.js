@@ -3,7 +3,7 @@ import './Service.css';
 function Service() {
   return (
     <div id="Service" className="vert-center">
-      <div className="content">
+      <div className="content" style={{ opacity:0 }}>
         <div className="scroll">
           <h1 className="display-4 bold">Eagle Scout Project</h1>
           <h2 className="display-6">Boy Scouts of America</h2>

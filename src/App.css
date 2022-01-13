@@ -80,12 +80,12 @@ h1, h2 {
 
 #About, #Introduction, #Meet, #Projects, #Qualifications, #Service {
   min-height: 100vh;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
   #About, #Introduction, #Meet, #Projects, #Qualifications, #Service {
-    padding: 25px;
+    padding: 20px;
   }
 }
 
@@ -130,8 +130,7 @@ h1, h2 {
 .scroll {
   overflow-y: auto;
   height: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 
 .scroll::-webkit-scrollbar {
