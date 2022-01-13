@@ -13,9 +13,21 @@
     <script>
     // UPON DOCUMENT LOAD...
     $(document).ready(function() {
-      // $(window).scroll(function() {
-      //   console.log($("#about-me").offsetTop);
-      // });
+      $(window).scroll(function() {
+        let selfie = document.getElementById("selfie-container");
+        
+        let ele_midpoint = selfie.getBoundingClientRect().height / 2;
+        let ele_offsetTop = selfie.offsetTop;
+
+        let viewbox_distance_travelled = -1 * document.getElementById("About").getBoundingClientRect().y;
+        let viewbox_midpoint = document.documentElement.clientHeight / 2;
+
+        let ele_midpoint_offsetTop = ele_midpoint + ele_offsetTop;
+        let viewbox_midpoint_offsetTop = viewbox_distance_travelled + viewbox_midpoint;
+        
+        let difference = ele_midpoint_offsetTop - viewbox_midpoint_offsetTop;
+        console.log(difference);
+      });
 
       /* INITIALIZATION */
       // initially hide buttons

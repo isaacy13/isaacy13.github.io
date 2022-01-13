@@ -33,7 +33,7 @@ class App extends react.Component {
   }
   
   componentDidMount() {
-    // alert others that content has loaded
+    // alert others that content has loaded... stop loading page
     let images = document.getElementsByTagName("img");
 
     this.total_images = images.length;

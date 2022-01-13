@@ -16,3 +16,9 @@
         width: 90% !important;
     }
 }
+
+@media only screen and (max-width: 750px) {
+    #Qualifications > div > div {
+        width: 100% !important;
+    }
+}

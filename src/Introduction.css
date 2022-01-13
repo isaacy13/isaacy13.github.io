@@ -32,3 +32,16 @@
     }
 }
 
+@media only screen and (max-width: 750px) {
+    #introduction-desc-container {
+        width: 100% !important;
+    }
+
+    #selfie-container {
+        width: 80% !important;
+    }
+
+    #selfie-container > img {
+        width: 100%;
+    }
+}

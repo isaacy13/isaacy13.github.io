@@ -54,7 +54,6 @@
     margin: 0;
     padding: 20px;
     text-align: center;
-    /* font-size: 4.2vw !important; */
 }
 
 #Projects .fs-5 {
@@ -75,4 +74,10 @@
 
 .private {
     color: red;
+}
+
+@media only screen and (max-width: 750px) {
+    .project-image {
+        height: unset;
+    }
 }
