@@ -157,7 +157,7 @@ h1, h2 {
 #LoadingPage {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   background: #500000;
 
   display: flex;
