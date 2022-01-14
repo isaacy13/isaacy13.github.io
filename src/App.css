@@ -203,3 +203,19 @@ h1, h2 {
 .fade:not(.show) {
   display: none !important;
 }
+
+#LoadingPage > div {
+  position: absolute;
+  flex-direction: column;
+}
+#LoadingPage > div > h1 {
+  margin-bottom: 7px;
+}
+
+#SkipButton {
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-size: 12px !important;
+}

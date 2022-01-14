@@ -28,11 +28,23 @@ class App extends react.Component {
     this.images_loaded = 0;
     this.total_images = -1;
 
+    // determines whether skip button is shown
+    this.show_skip = false;
+
     this.content = this.content.bind(this);
     this.loading = this.loading.bind(this);
   }
   
   componentDidMount() {
+    // wait 2.5s before display skip button
+    setTimeout(function() {
+        this.show_skip = true;
+        this.setState({show_skip : true});
+      }
+      .bind(this),
+      2500
+    );
+
     // alert others that content has loaded... stop loading page
     let images = document.getElementsByTagName("img");
 
@@ -59,9 +71,11 @@ class App extends react.Component {
       alert("Make sure AdBlock is off (some features may not work properly)");
   }
 
+  // TODO: add pretty background
+
   content() {
     return (
-      <div>
+      <div id="content">
         <Sidebar />
         <About />
         <Introduction />
@@ -80,7 +94,10 @@ class App extends react.Component {
         <svg>
           <circle cx="70" cy="70" r="70"></circle>
         </svg>
-        <h1 x="50%" y="50%" textAnchor="middle" stroke="#51c5cf" strokeWidth="2px" dy=".3em" style={{ position: "absolute" }} className="fs-6">Loading</h1>
+        <div className="section">
+          <h1 x="50%" y="50%" textAnchor="middle" stroke="#51c5cf" strokeWidth="2px" dy=".3em" className="fs-6">Loading</h1>
+          <button type="button" className="btn btn-light fs-6" id="SkipButton" style={{ display: this.show_skip === true ? "unset" : "none" }}>Skip</button>
+        </div>
       </div>
     );
   }
