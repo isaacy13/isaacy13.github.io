@@ -4,10 +4,10 @@ function About() {
   return (
     <div id="About" className="section">
       <div id="About-title" className="section">
-        <img src="resources/images/tamu.svg"/>
+        <img id="about-tamu-logo" src="resources/images/tamu.svg"/>
         <div>
-          <h1 className="display-4">Isaac Yeang</h1>
-          <h2 className="display-5">Software Developer</h2>
+          <h1 id="about-name" className="display-4">Isaac Yeang</h1>
+          <h2 id="about-job-title" className="display-5">Software Developer</h2>
         </div>
       </div>
     </div>

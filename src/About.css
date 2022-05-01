@@ -16,6 +16,38 @@
     margin-right: 15px;
 }
 
+.roll {
+    animation-name: roll;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes roll {
+    from {
+        opacity: 0;
+        transform: rotate(90deg) translateX(-100%);
+    } to {
+        opacity: 100%;
+        transform: rotate(0deg) translateX(0);
+    }
+}
+
+.slide-down {
+    animation-name: slide-down;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    } to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
 @media only screen and (max-width: 500px) {
     #About > img {
         margin-right: 0;

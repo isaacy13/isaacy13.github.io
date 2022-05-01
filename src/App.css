@@ -79,6 +79,7 @@ h1, h2 {
 }
 
 #About, #Introduction, #Meet, #Projects, #Qualifications, #Service {
+  min-width: 400px;
   min-height: 100vh;
   margin-bottom: 20px;
 }
@@ -86,6 +87,16 @@ h1, h2 {
 @media only screen and (max-width: 1000px) {
   #About, #Introduction, #Meet, #Projects, #Qualifications, #Service {
     padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #About, #Introduction, #Meet, #Projects, #Qualifications, #Service {
+    min-width: 250px;
+  }
+
+  #About-title {
+    flex-direction: column;
   }
 }
 
@@ -136,9 +147,6 @@ h1, h2 {
 .scroll::-webkit-scrollbar {
   width: 12px;
   height: 12px;
-}
-.scroll::-webkit-scrollbar-track {
-  background: #4E4E4E;
 }
 .scroll::-webkit-scrollbar-thumb {
   background: rgb(45,45,45);

@@ -2,8 +2,13 @@ import './Sidebar.css';
 
 function Sidebar() {
     return (
-        <div id="sidebar">
-            <a id="about-me" className="sidebar-icon" href="#About">
+        <div id="sidebar" className="scroll" style={{ height: "115px", bottom: "3vh" }}>
+            <a id="webpage-start" className="sidebar-icon" href="#About">
+                <img src="resources/images/power.svg"/>
+                <p>Introduction</p>
+            </a>
+
+            <a id="about-me" className="sidebar-icon" href="#Introduction">
                 <img src="resources/images/person.svg"/>
                 <p>About Me</p>
             </a>

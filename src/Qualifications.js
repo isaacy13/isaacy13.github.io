@@ -3,31 +3,41 @@ import './Qualifications.css';
 function Qualifications() {
   return (
     <div id="Qualifications" className="section">
-      <div style={{width: "50%"}}>
-        <div style={{width: "80%", margin: "auto"}}>
+      <div className="scroll" id="qual-text-container">
+        <div id="qual-text">
           <h1 className="display-4 bold" style={{margin: 0}}>Qualifications</h1>
-          <h2 className="display-6" style={{fontSize: "18px"}}>Spoiler: I enjoy developing</h2>
           <hr />
-          <p className="fs-6">Senior year of high school, I was unsure of the future. Although I always knew college was the next step, I had no idea what I was passionate about.</p>
-          <p className="fs-6">Luckily, I had stumbled across a free, online program known as CS50. So for the pandemic-ridden summer of my senior year, I was doing introductory C++ exercises. 
-          Suprisingly, I enjoyed it a lot; somehow, manipulating the computer to do what I wanted was really appealing. From then, I knew computer science was the major meant for me.</p>
 
-          <p className="fs-6">Fast forward a year later, after getting clobbered with harder yet much more interesting classes, I have never looked back on my career path. So far, I'm most interested in: </p>
-
+          <h2 className="display-6 section-header">Skillset</h2>
           <ul>
             <li>Full-stack web, desktop, and mobile</li>
-            <li>Applying machine learning to real-world scenarios</li>
-            <li>AR/VR applications</li>
-            <li>Learning more about other areas of development</li>
+            <li>Security principles in the design/testing of apps</li>
+            <li>Leading projects in Waterfall/Scrum methodologies</li>
+            <li>Integrating TDD with CI/CD pipelines (e.g.: linters, testing suites, code coverage, security auditing tools)</li>
           </ul>
+          <hr />
 
-          <p className="fs-6">Looking forward to what the future holds!</p>
+          <h2 className="display-6 section-header">Areas of Interest</h2>
+          <ul>
+            <li>Full-stack development</li>
+            <li>Cybersecurity</li>
+            <li>Applied ML</li>
+            <li>AR/VR</li>
+          </ul>
+          <hr />
+
+          <h2 className="display-6 section-header">Awards</h2>
+          <ul>
+            <li>Dean's Honor Award</li>
+            <li>Placed at TAMUctf 2022</li>
+            <li>Placed in Capsher Coding Challenge</li>
+          </ul>
           
-          <a type="button" className="btn btn-primary" href="resources/isaac_yeang_resume.pdf">Resume</a>
+          <a type="button" className="btn btn-primary" href="https://drive.google.com/file/d/1GiUxl0dxoKzI5eyLd0ZgWl9n_IIbodQg/view?usp=sharing">Resume</a>
         </div>
       </div>
       
-      <iframe src="resources/isaac_yeang_resume.pdf" id="resume" />
+      <iframe src="https://drive.google.com/file/d/1GiUxl0dxoKzI5eyLd0ZgWl9n_IIbodQg/preview" allow="autoplay" id="resume"></iframe>
 
     </div>
   );

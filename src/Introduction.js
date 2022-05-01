@@ -3,16 +3,17 @@ import './Introduction.css';
 function Introduction() {
   return (
     <div id="Introduction" className="section">
-      <div style={{ opacity: 0 }} className="section" id="selfie-container">
+      <div  className="section" id="selfie-container">
         <img src="resources/images/selfie.svg"/>
       </div>
-      <div id="introduction-desc-container" style={{ opacity: 0 }}>
+      <div id="introduction-desc-container" >
         <div style={{width: "80%"}}>
           <h1 className="display-4 bold">Hey, I'm Isaac.</h1>
-          <div className="content">
+          <div className="content scroll">
               <h2 className="fs-4">Senior at Texas A&M 🎓</h2>
-              <h2 className="fs-4">Full stack web, mobile, and desktop 👨‍💻</h2>
-              <h2 className="fs-4">Passionate about learning cool technologies 👨‍🔬</h2>
+              <h2 className="fs-4">Full-stack application development 👨‍💻</h2>
+              <h2 className="fs-4">Emphasis on cybersecurity 🔒</h2>
+              <h2 className="fs-4">Passion for learning cool technologies 👨‍🔬</h2>
               <h2 className="fs-4">Let's connect! 🔌</h2>
           </div>
           <div className="horizontal-icons">

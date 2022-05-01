@@ -73,22 +73,29 @@ window.onload = () => {
     "#aggieland-card",
     "#bball",
     "#bball-card",
-    "#Service > .content"
+    "#service-card"
   ];
+
+  // set opacity to 0 for animated elements
+  for (let i = 0; i < identifiers.length; i++)
+    document.querySelector(identifiers[i]).style.opacity = 0;
+
+  document.querySelector("#aggieland").transform = "scale(0)";
+  document.querySelector("#bball").transform = "scale(0)";
 
   // how to animate each identifier
   let animation_types = [
     ["rotate3d", "fadein"],
     ["fadein"],
-    ["flyin"],
+    ["flyin", "fadein"],
     ["fadein"],
-    ["flyin"],
+    ["flyin", "fadein"],
     ["fadein"],
-    ["rotate3d", "fadein"]
+    ["fadein"]
   ];
 
   if (identifiers.length !== animation_types.length) {
-    alert("All identifiers must have corresponding animation types");
+    alert("ERR: All identifiers must have corresponding animation types");
   }
   
   // animation status for each identifier

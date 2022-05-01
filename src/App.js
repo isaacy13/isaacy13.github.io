@@ -89,6 +89,20 @@ class App extends react.Component {
 
   loading() {
     let loaded = this.images_loaded === this.total_images;
+    
+    // whenever page finishes loaded, perform animations
+    if (loaded) {
+      document.getElementById("about-tamu-logo").classList.add("roll");
+      document.getElementById("about-name").style.opacity = 0;
+        document.getElementById("about-job-title").style.opacity = 0;
+      setTimeout(function() {
+        document.getElementById("about-name").classList.add("slide-down");
+        document.getElementById("about-job-title").classList.add("slide-down");
+      },
+        1000
+      );
+    }
+
     return(
       <div id="LoadingPage" className={`${loaded ? "fade" : ""}`}>
         <svg>

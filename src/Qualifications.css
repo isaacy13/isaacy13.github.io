@@ -2,18 +2,38 @@
     margin: 20px 0px 20px 0px;
 }
 
+#qual-text-container {
+    width: 50%;
+    max-height: 100vh;
+    border-radius: 5px;
+}
+
+#qual-text {
+    width: 80%; 
+    margin: auto;
+}
+
 #resume {
-    height: 90vh;
+    min-height: 100vh;
     width: 40%;
 }
 
-@media only screen and (max-width: 1000px) {
+.section-header {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 850px) {
     #resume {
         display: none;
     }
 
     #Qualifications > div {
         width: 90% !important;
+    }
+
+    #qual-text-container {
+        background: #4e4e4e;
     }
 }
 

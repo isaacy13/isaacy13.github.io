@@ -4,7 +4,7 @@
 
 #project-header {
     text-align: center;
-    height: 100%;
+    height: 10%;
     width: 100%;
     padding: 0;
 }
@@ -56,6 +56,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .icon {
+        width: 100%;
+    }
+
     #Projects > .section {
         flex-direction: column;
     }
@@ -70,6 +74,7 @@
 
     #Apps, #Linux, #ML {
         margin: 0;
+        margin-bottom: 15px;
     }
 
     #project-header {
@@ -82,14 +87,13 @@
     #project-selector-content {
         flex-direction: row;
     }
-
-    #Linux {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
 }
 
 @media only screen and (max-width: 750px) {
+    #project-list {
+        max-height: 400px;
+    }
+    
     #Projects > div {
         width: 100%;
     }

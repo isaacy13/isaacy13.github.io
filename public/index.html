@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="%PUBLIC_URL%/coding.png" />
 
@@ -15,6 +15,7 @@
     $(document).ready(function() {
       /* INITIALIZATION */
       // initially hide buttons
+      $("#webpage-start").hide();  
       $("#about-me").hide();
       $("#qualifications").hide();
       $("#projects").hide();
@@ -23,20 +24,25 @@
       /* EXPAND/COLLAPSE SIDE BAR */
       // based on click, expand / collapse side bar
       $("#compass").click(function() {
-          if ($("#about-me").is(":visible")){
+          if ($("#webpage-start").is(":visible")){
+              $("#webpage-start").fadeOut();  
               $("#about-me").fadeOut();
               $("#qualifications").fadeOut();
               $("#projects").fadeOut();
               $("#service").fadeOut();
 
               $("#compass > p").text("Expand Nav");
+              $("#sidebar").animate({height: "115px"}, 600);
+              $("#sidebar").css({"bottom" : "2.5%"});
           } else {
+              $("#webpage-start").fadeIn();  
               $("#about-me").fadeIn();
               $("#qualifications").fadeIn();
               $("#projects").fadeIn();
               $("#service").fadeIn();
-
               $("#compass > p").text("Shrink Nav");
+              $("#sidebar").animate({height: "95%"}, 600);
+              $("#sidebar").css({"bottom" : "2.5%"});
           }
       });
     });

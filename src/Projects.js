@@ -1,6 +1,6 @@
 import react from 'react';
 import './Projects.css';
-import {GeoEats, MovieRecommender, MetisTiles, PhotoRouletteBot, StudyBuddy, HTTPClient, TCPClientServer, MTIPC, IPC, LinuxShell, PipeIPC, TextPredictor, ClothingIdentifier} from './ProjectsContent';
+import {SAIFDClubSite, PersonalWebsite, GeoEats, MovieRecommender, MetisTiles, PhotoRouletteBot, StudyBuddy, HTTPClient, TCPClientServer, MTIPC, LinuxShell, TextPredictor, ClothingIdentifier} from './ProjectsContent';
 
 class Project {
   constructor(title, content_type, image_url="") {
@@ -16,7 +16,7 @@ export default class Projects extends react.Component {
 
     this.default_project_titles = ["Apps", "Linux", "ML"];
     this.default_project_aliases = ["Apps", "Linux", "ML"];
-    this.default_projects = ["GeoEats", "HTTPClient", "TextPredictor"];
+    this.default_projects = ["SAIFDClubSite", "HTTPClient", "TextPredictor"];
 
     this.default_project_type_selected = this.default_project_aliases[0];
     this.default_project_selected = this.default_projects[0];
@@ -53,6 +53,8 @@ export default class Projects extends react.Component {
 
   AppsProjects() {
     let titles = [
+      "SAIFD Club Site",
+      "Personal Website",
       "Geo Eats",
       "Movie Recommender",
       "Metis Tiles",
@@ -61,6 +63,8 @@ export default class Projects extends react.Component {
     ];
 
     let aliases = [
+      "SAIFDClubSite",
+      "PersonalWebsite",
       "GeoEats",
       "MovieRecommender",
       "MetisTiles",
@@ -80,18 +84,14 @@ export default class Projects extends react.Component {
       "HTTP Client",
       "Multi-threaded (TCP) Client-Server App",
       "Multi-threaded IPC",
-      "Pipes, Message Queues, & Shared Memory IPC",
-      "Linux Shell",
-      "Client-Server IPC via Named Pipes"
+      "Linux Shell"
     ];
 
     let aliases = [
       "HTTPClient",
       "TCPClientServer",
       "MTIPC",
-      "IPC",
-      "LinuxShell",
-      "PipeIPC"
+      "LinuxShell"
     ];
 
     let projects = this.CreateProjects(titles, aliases);
@@ -123,7 +123,11 @@ export default class Projects extends react.Component {
   ContentSelect() {
     let content_type = this.content_type;
 
-    if (content_type === "GeoEats")
+    if (content_type === "SAIFDClubSite")
+      return <SAIFDClubSite />
+    else if (content_type === "PersonalWebsite")
+      return <PersonalWebsite />
+    else if (content_type === "GeoEats")
       return <GeoEats />;
     else if (content_type === "MovieRecommender")
       return <MovieRecommender />;
@@ -139,12 +143,8 @@ export default class Projects extends react.Component {
       return <TCPClientServer />;
     else if (content_type === "MTIPC")
       return <MTIPC />;
-    else if (content_type === "IPC")
-      return <IPC />;
     else if (content_type === "LinuxShell")
       return <LinuxShell />;
-    else if (content_type === "PipeIPC")
-      return <PipeIPC />;
     else if (content_type === "TextPredictor")
       return <TextPredictor />;
     else if (content_type === "ClothingIdentifier")
@@ -236,7 +236,7 @@ export default class Projects extends react.Component {
     let project_types = this.CreateProjects(titles, aliases, image_urls);
 
     return(
-      <div className="content vert-center" id="project-selector-content">
+      <div className="content scroll" id="project-selector-content">
         {project_types.map((project, index) =>
           <div className={`icon section selector ${!index ? "selected" : ""}`} id={project.content_type} key={project.content_type} onClick={() => {this.SetProject(project.content_type);}}>
             <img src={project.image_url} />
@@ -259,8 +259,8 @@ export default class Projects extends react.Component {
             <this.ProjectTypes />
           </div>
 
-          <div style={{display: "flex"}}>
-            <div className="content" id="project-list">
+          <div style={{display: "flex", width: "100%"}}>
+            <div className="content scroll" id="project-list">
               {this.ProjectSelect()}
             </div>
 

@@ -44,6 +44,7 @@
     background: #2D2D2D;
 
     width: 100%;
+    min-width: 400px;
     height: fit-content;
     border-radius: 15px;
     padding: 20px;
@@ -79,5 +80,9 @@
 @media only screen and (max-width: 750px) {
     .project-image {
         height: unset;
+    }
+
+    #project-content-container {
+        max-height: 400px;
     }
 }

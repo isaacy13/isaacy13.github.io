@@ -1,8 +1,11 @@
 #Service > .content {
-    width: 80%;
-    height: 90vh;
+    width: 60%;
     margin: auto;
-    padding: 30px 40px 30px 40px;
+    padding: 0;
+}
+
+#service-card {
+    height: 100%;
 }
 
 #Service .bold {
@@ -10,12 +13,21 @@
 }
 
 #Service img {
-    padding: 20px 0px 20px 0px;
+    max-width: 90%;
+    min-width: 85%;
+    margin: auto;
+    display: flex;
+    align-self: center;
+    margin-bottom: 20px;
 }
 
 #Service .display-6 {
     color: rgb(180, 180, 180);
     font-size: 28px;
+}
+
+#Service .fs-4 {
+    line-height: normal;
 }
 
 .display-4, .display-6 {
@@ -25,5 +37,9 @@
 @media only screen and (max-width: 750px) {
     #Service > .content {
         width: 100%;
+    }
+
+    #service-card {
+        max-height: 400px;
     }
 }
