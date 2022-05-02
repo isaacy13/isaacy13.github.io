@@ -4,7 +4,7 @@ function Introduction() {
   return (
     <div id="Introduction" className="section">
       <div  className="section" id="selfie-container">
-        <img src="resources/images/selfie.svg"/>
+        <img src="resources/images/selfie.png"/>
       </div>
       <div id="introduction-desc-container" >
         <div style={{width: "80%"}}>

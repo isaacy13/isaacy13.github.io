@@ -13,7 +13,7 @@ function Meet() {
           </div>
         </div>
         <div style={{ paddingLeft: "5%" }}>
-          <img src="resources/images/aggieland.svg" id="aggieland" height="50%"/>
+          <img src="resources/images/aggieland.png" id="aggieland" height="50%"/>
         </div>
       </div>
       <div className="section">
