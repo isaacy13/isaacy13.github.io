@@ -1,9 +1,8 @@
-import './App.css';
+import './css/App.css';
 
 import About from './About';
 import Qualifications from './Qualifications';
 import Projects from './Projects';
-import Service from './Service';
 import Sidebar from './Sidebar';
 import Introduction from './Introduction';
 import Meet from './Meet';
@@ -82,7 +81,6 @@ class App extends react.Component {
         <Meet />
         <Qualifications />
         <Projects />
-        <Service />
       </div>
     );
   }

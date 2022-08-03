@@ -1,4 +1,5 @@
-import './Service.css';
+// deprecated 8/3/22
+import './css/Service.css';
 
 function Service() {
   return (

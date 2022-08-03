@@ -1,5 +1,5 @@
 import react from 'react';
-import './Projects.css';
+import './css/Projects.css';
 import {SAIFDClubSite, PersonalWebsite, GeoEats, MovieRecommender, MetisTiles, PhotoRouletteBot, StudyBuddy, HTTPClient, TCPClientServer, MTIPC, LinuxShell, TextPredictor, ClothingIdentifier} from './ProjectsContent';
 
 class Project {

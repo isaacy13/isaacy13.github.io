@@ -1,4 +1,4 @@
-import './Sidebar.css';
+import './css/Sidebar.css';
 
 function Sidebar() {
     return (
@@ -21,11 +21,6 @@ function Sidebar() {
             <a id="projects" className="sidebar-icon" href="#Projects">
                 <img src="resources/images/project.svg"/>
                 <p>Projects</p>
-            </a>
-
-            <a id="service" className="sidebar-icon" href="#Service">
-                <img src="resources/images/service.svg"/>
-                <p>Service</p>
             </a>
 
             <a id="compass" className="sidebar-icon">

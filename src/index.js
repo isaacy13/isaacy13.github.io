@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
+import './css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -73,7 +73,6 @@ window.onload = () => {
     "#aggieland-card",
     "#bball",
     "#bball-card",
-    "#service-card"
   ];
 
   // set opacity to 0 for animated elements
@@ -90,7 +89,6 @@ window.onload = () => {
     ["flyin", "fadein"],
     ["fadein"],
     ["flyin", "fadein"],
-    ["fadein"],
     ["fadein"]
   ];
 

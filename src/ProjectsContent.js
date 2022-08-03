@@ -1,4 +1,4 @@
-import './ProjectsContent.css';
+import './css/ProjectsContent.css';
 
 function ProjectsContentTemplate(props) {
     let colors = ["purple-blue", "purple-red", "purple-teal", "purple-pink", "purple-black"];
@@ -85,7 +85,7 @@ export function SAIFDClubSite() {
             <Privacy />
         </div>;
 
-    let skills = ["Ruby", "Rails", "CSS", "Bootstrap", "Google OAuth", "TDD", "MVC Model", "CI/CD Pipeline", "Scrum", "Web App"];
+    let skills = ["Ruby", "Rails", "PostgreSQL", "Docker", "CSS", "Bootstrap", "Google OAuth", "TDD", "MVC Model", "CI/CD Pipeline", "Scrum", "Web App"];
 
     return(
         <ProjectsContentTemplate 

@@ -18,15 +18,7 @@
     width: 70%;
 }
 
-@media only screen and (max-width: 1000px) {
-    #introduction-desc-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1025px) {
     #Introduction {
         flex-direction: column;
     }
@@ -35,12 +27,20 @@
         margin: 20px;
     }
 
-    #introduction-desc-container {
+    #introduction-desc-container > div > h1 {
         text-align: center;
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
+    #introduction-desc-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 850px) {
     #introduction-desc-container {
         width: 100% !important;
     }

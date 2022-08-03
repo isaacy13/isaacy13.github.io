@@ -1,4 +1,4 @@
-import './Introduction.css';
+import './css/Introduction.css';
 
 function Introduction() {
   return (
@@ -7,15 +7,15 @@ function Introduction() {
         <img src="resources/images/selfie.png"/>
       </div>
       <div id="introduction-desc-container" >
-        <div style={{width: "80%"}}>
+        <div style={{width: "80%", margin: "auto"}}>
           <h1 className="display-4 bold">Hey, I'm Isaac.</h1>
-          <div className="content scroll">
-              <h2 className="fs-4">Senior at Texas A&M 🎓</h2>
-              <h2 className="fs-4">Full-stack application development 👨‍💻</h2>
-              <h2 className="fs-4">Emphasis on cybersecurity 🔒</h2>
-              <h2 className="fs-4">Passion for learning cool technologies 👨‍🔬</h2>
-              <h2 className="fs-4">Let's connect! 🔌</h2>
-          </div>
+          <ul className="list-group">
+            <li className="list-group-item fs-4">Graduating senior @ Texas A&M <span className="list-image">🎓</span></li>
+            <li className="list-group-item fs-4">Full-stack software development <span className="list-image">👨‍💻</span></li>
+            <li className="list-group-item fs-4">Emphasis on cybersecurity <span className="list-image">🔒</span></li>
+            <li className="list-group-item fs-4">Passion for tech <span className="list-image">💖</span></li>
+            <li className="list-group-item fs-4">Let's connect! <span className="list-image">🔌</span></li>
+          </ul>
           <div className="horizontal-icons">
             <a href="https://www.linkedin.com/in/isaac-yeang/" id="linkedin-logo">
               <img src="resources/images/linkedin.svg" width="50px" height="50px"/>

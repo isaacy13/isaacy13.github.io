@@ -2,9 +2,12 @@
     margin: 20px 0px 20px 0px;
 }
 
+#qualificationsAccordion {
+    margin-bottom: 25px;
+}
+
 #qual-text-container {
     width: 50%;
-    max-height: 100vh;
     border-radius: 5px;
 }
 
@@ -18,9 +21,29 @@
     width: 40%;
 }
 
+#resume-button {
+    display: block;
+    bottom: 0;
+    padding: 20px;
+    background-color: #2D2D2D;
+    border-color: #2D2D2D;
+}
+
 .section-header {
     font-size: 22px;
     margin-bottom: 8px;
+}
+
+.accordion-button {
+    background-color: #2D2D2D !important;
+}
+
+.accordion-body {
+    background-color: #4E4E4E !important;
+}
+
+.accordion-button, .accordion-button::after {
+    color: white !important;
 }
 
 @media only screen and (max-width: 850px) {
