@@ -47,6 +47,69 @@ function PrivateRepo() {
     );
 }
 
+export function FOGSHHBridge() {
+    let desc = 
+        <div>
+            <h1 className="fs-5">
+                <strong>Summer 2022 HEB Internship Project #1:</strong> Utilized WebView to allow new iOS-powered scanners to run on older software
+            </h1>
+
+            <ul>
+                <li>Created & evaluated several working prototypes to determine best solution</li>
+                <ul>
+                    <li>.NET 6 Web App</li>
+                    <li>Custom Keyboard</li>
+                    <li><strong>Custom Browser</strong></li>
+                </ul>
+                <li>Enabled iOS scanners to scan barcode data into older software</li>
+                <ul>
+                    <li>SDK reads scan data</li>
+                    <li>Data fired into WebView via jQuery</li>
+                </ul>
+                <li>Assisted with establishing Bitrise MDM pipeline for ~600 iPhones</li>
+                <li>Developed, tested, and integrated 8x faster than expected</li>
+            </ul>
+
+            <Privacy />
+        </div>;
+
+    let skills = ["iOS", "Swift", "SwiftUI", "jQuery", "JavaScript", "UIKit", "Agile", "MDM", "Bitrise", "WebView", "Cognex SDK"];
+
+    return(
+        <ProjectsContentTemplate 
+            name="FOGS HH Bridge"
+            skills={skills}
+            description={desc}/>
+    );
+}
+
+export function FOGSHHNative() {
+    let desc = 
+        <div>
+            <h1 className="fs-5">
+                <strong>Summer 2022 HEB Internship Project #2:</strong> Developed native software after creating Bridge app
+            </h1>
+
+            <ul>
+                <li>Created native software for new iOS-powered scanners to replace old software</li>
+                <li>Assisted with establishing Bitrise MDM pipeline for ~600 iPhones</li>
+                <li>Developed .NET 6 LDAP API endpoints for authentication</li>
+                <li>Collaborated with Apple to validate iOS design</li>
+            </ul>
+
+            <Privacy />
+        </div>;
+
+    let skills = ["iOS", "Swift", "SwiftUI", ".NET 6", "LDAP Authentication", "Agile", "MDM", "Bitrise", "Cognex SDK", "APIs"];
+
+    return(
+        <ProjectsContentTemplate 
+            name="FOGS HH Native"
+            skills={skills}
+            description={desc}/>
+    );
+}
+
 export function SAIFDClubSite() {
     let desc = 
         <div>
@@ -103,7 +166,7 @@ export function PersonalWebsite() {
             </h1>
 
             <ul>
-                <li>JS Animations</li>
+                <li>jQuery/JS Animations</li>
                 <li>CSS Keyframe Animations</li>
                 <li>Hosted on GH Pages</li>
             </ul>
@@ -111,7 +174,7 @@ export function PersonalWebsite() {
             <h1 className="fs-5"><a href="https://isaacy13.github.io/" style={{fontWeight: 500}}>Check it out</a></h1>
         </div>;
 
-    let skills = ["ReactJS", "JQuery", "HTML", "CSS", "Bootstrap", "Web App"];
+    let skills = ["ReactJS", "JQuery", "HTML", "CSS", "JavaScript", "Bootstrap", "Web App"];
 
     return(
         <ProjectsContentTemplate 

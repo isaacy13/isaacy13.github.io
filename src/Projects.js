@@ -1,6 +1,6 @@
 import react from 'react';
 import './css/Projects.css';
-import {SAIFDClubSite, PersonalWebsite, GeoEats, MovieRecommender, MetisTiles, PhotoRouletteBot, StudyBuddy, HTTPClient, TCPClientServer, MTIPC, LinuxShell, TextPredictor, ClothingIdentifier} from './ProjectsContent';
+import {FOGSHHBridge, FOGSHHNative, SAIFDClubSite, PersonalWebsite, GeoEats, MovieRecommender, MetisTiles, PhotoRouletteBot, StudyBuddy, HTTPClient, TCPClientServer, MTIPC, LinuxShell, TextPredictor, ClothingIdentifier} from './ProjectsContent';
 
 class Project {
   constructor(title, content_type, image_url="") {
@@ -16,7 +16,7 @@ export default class Projects extends react.Component {
 
     this.default_project_titles = ["Apps", "Linux", "ML"];
     this.default_project_aliases = ["Apps", "Linux", "ML"];
-    this.default_projects = ["SAIFDClubSite", "HTTPClient", "TextPredictor"];
+    this.default_projects = ["FOGSHHBridge", "HTTPClient", "TextPredictor"];
 
     this.default_project_type_selected = this.default_project_aliases[0];
     this.default_project_selected = this.default_projects[0];
@@ -53,6 +53,8 @@ export default class Projects extends react.Component {
 
   AppsProjects() {
     let titles = [
+      "FOGS HH Bridge",
+      "FOGS HH Native",
       "SAIFD Club Site",
       "Personal Website",
       "Geo Eats",
@@ -63,6 +65,8 @@ export default class Projects extends react.Component {
     ];
 
     let aliases = [
+      "FOGSHHBridge",
+      "FOGSHHNative",
       "SAIFDClubSite",
       "PersonalWebsite",
       "GeoEats",
@@ -123,7 +127,11 @@ export default class Projects extends react.Component {
   ContentSelect() {
     let content_type = this.content_type;
 
-    if (content_type === "SAIFDClubSite")
+    if (content_type === "FOGSHHBridge")
+      return <FOGSHHBridge />
+    else if (content_type === "FOGSHHNative")
+      return <FOGSHHNative />
+    else if (content_type === "SAIFDClubSite")
       return <SAIFDClubSite />
     else if (content_type === "PersonalWebsite")
       return <PersonalWebsite />

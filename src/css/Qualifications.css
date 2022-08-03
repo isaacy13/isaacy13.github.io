@@ -29,6 +29,11 @@
     border-color: #2D2D2D;
 }
 
+#resume-button:hover {
+    background-color: #4E4E4E;
+    border-color: #4E4E4E;
+}
+
 .section-header {
     font-size: 22px;
     margin-bottom: 8px;
