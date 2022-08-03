@@ -233,6 +233,7 @@ h1, h2 {
   color: white;
   background-color: #4E4E4E;
   border-bottom: solid rgba(255, 255, 255, 0.25) 1px;
+  text-align: initial;
 }
 
 .list-image {
