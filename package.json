@@ -1,8 +1,8 @@
 {
   "name": "personal_website",
   "version": "0.1.0",
-  "main": "./js/index.js",
   "private": true,
+  "homepage": "https://isaacy13.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
